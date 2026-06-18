@@ -297,7 +297,7 @@
     var modalsRoot = document.createElement('div');
     modalsRoot.innerHTML = LEAD_HTML + CONTACT_HTML + TOOL_HTML;
     document.body.appendChild(modalsRoot);
-    var qf = modalsRoot.querySelector('[data-qr]'); if (qf) qf.innerHTML = '<img src="' + (RES('qr') || 'assets/contact-qr.png') + '" alt="WeChat QR code" style="width:100%;height:100%;object-fit:contain;display:block">';
+    var qf = modalsRoot.querySelector('[data-qr]'); if (qf) qf.innerHTML = '<img src="' + (RES('qr') || 'assets/contact-qr.webp') + '" alt="WeChat QR code" style="width:100%;height:100%;object-fit:contain;display:block">';
 
     var openOv = null;
     function openModal(id){
@@ -363,7 +363,7 @@
         headline: { en: 'A carbon check-up for your whole company', zh: '为企业做一次“碳体检”' },
         pages: [
           {
-            img: 'assets/svc-ghg-1.png',
+            img: 'assets/svc-ghg-1.webp',
             title: { en: 'Not sure how much carbon your company emits in a year?', zh: '不知道公司一年到底排了多少碳？' },
             body:  { en: "Listing, ESG reporting, group or customer data requests, carbon-neutral planning — they all start with one number: your company's annual emissions and where they come from. But emission sources are scattered, methods inconsistent, and most teams don't know where to begin.", zh: '上市、发 ESG 报告、应对集团或大客户的数据要求、规划碳中和——第一步都得先算清“整个公司一年排多少碳、主要排在哪”。但排放源分散、口径不一、缺标准方法，企业常常无从下手。' },
             points: [
@@ -373,7 +373,7 @@
             ]
           },
           {
-            img: 'assets/svc-ghg-2.png',
+            img: 'assets/svc-ghg-2.webp',
             title: { en: 'Map your full carbon footprint in one pass', zh: 'GEN 智能合规平台，帮你一次摸清碳家底' },
             body:  { en: 'Enter electricity, fuel and industry basics online for a second-by-second estimate of annual emissions and breakdown. For a formal report, our experts calculate Scope 1, Scope 2 (and supply-chain Scope 3) and issue an ISO 14064-aligned inventory report.', zh: '在线填入用电、油气、行业等基础信息，平台秒级估算全年排放与占比；需要正式报告时，由专家团队人工核算范围一、范围二（及供应链范围三），对标 ISO 14064 出具正式碳盘查报告。' },
             pointsLabel: { en: 'Deliverables', zh: '交付物' },
@@ -385,7 +385,7 @@
             ]
           },
           {
-            img: 'assets/svc-ghg-3.png',
+            img: 'assets/svc-ghg-3.webp',
             title: { en: 'One dataset, many uses', zh: '一份数据，多处通用' },
             bodyLabel: { en: "Who it's for", zh: '适用对象' },
             body:  { en: 'Companies (pre-)listing and reporting ESG · those asked by group or customers to report emissions · those planning carbon neutrality or green-factory certification', zh: '准备 / 已上市需发 ESG 报告 · 被集团或大客户要求上报碳排放 · 计划碳中和或申报绿色工厂' },
@@ -404,7 +404,7 @@
         headline: { en: 'A compliant, polished ESG report in days', zh: '一本合规又好看的 ESG 报告，几天内成型' },
         pages: [
           {
-            img: 'assets/svc-esg-1.png',
+            img: 'assets/svc-esg-1.webp',
             title: { en: 'A single ESG report can take weeks the traditional way', zh: '一本 ESG 报告，传统做法要耗上数周' },
             body:  { en: 'It spans Environmental, Social and Governance across a dozen-plus topics; data is gathered piece by piece from many departments while you dodge contradictions and disclosure gaps. Listings, tenders, customers and investors are all waiting — and the team is stuck in a long manual process.', zh: '覆盖环境、社会、治理三大领域、十余项议题，数据要从多个部门一点点收集，还要避免逻辑矛盾与披露盲点。上市、投标、客户与投资人都在催，团队却被冗长流程拖住。' },
             points: [
@@ -414,7 +414,7 @@
             ]
           },
           {
-            img: 'assets/svc-esg-2.png',
+            img: 'assets/svc-esg-2.webp',
             title: { en: 'AI rebuilds the workflow — a draft in minutes', zh: 'AI 重构编制流程，初稿分钟级生成' },
             body:  { en: 'Start with an ESG self-assessment (questionnaire → score + E/S/G radar + gap flags). For the full report, the GEN Intelligent Compliance Platform auto-integrates multi-source data, matches the disclosure framework and generates a draft in minutes; its AI then reviews data consistency, depth and wording item by item. Revise per the suggestions and export a compliant version in one click.', zh: '先做 ESG 披露自测打分（答问卷 → 评分 + E/S/G 雷达图 + 缺口提示）；正式编制时，GEN 智能合规平台自动整合多源数据、智能匹配披露框架、分钟级生成初稿，再由 AI 逐项审核数据口径、披露深度与表述规范，团队按建议修订即可一键输出合规版本。' },
             pointsLabel: { en: 'Deliverables', zh: '交付物' },
@@ -426,7 +426,7 @@
             ]
           },
           {
-            img: 'assets/svc-esg-3.png',
+            img: 'assets/svc-esg-3.webp',
             title: { en: 'From weeks to about one week', zh: '数周 → 约一周' },
             bodyLabel: { en: 'Process', zh: '流程' },
             body:  { en: 'Self-assessment → data integration → AI-generated draft → AI review & revision → compliant delivery', zh: '自测打分 → 数据整合 → 智能生成初稿 → AI 审核修订 → 合规交付' },
@@ -446,7 +446,7 @@
         headline: { en: 'How much, how to buy, whether it offsets — sorted', zh: '该买多少、怎么买、能不能抵扣，一次说清' },
         pages: [
           {
-            img: RES('green1') || 'assets/svc-green-1.png',
+            img: RES('green1') || 'assets/svc-green-1.webp',
             title: { en: "Want green power but don't know where to start?", zh: '想用绿电，却不知从何买起？' },
             body:  { en: "Customers require green power, you're aiming for RE100, exports demand renewables, or you've done CBAM and want to offset costs — but branches are scattered, usage is small, markets differ by region, and many sites don't even have a separate meter to trade green power directly.", zh: '客户要求用绿电、要做 RE100、出口被要求可再生电力、或做了 CBAM 想抵扣成本——但分支机构分散、用电规模小、各地市场不一，很多场所连独立电表都没有，无法直接参与绿电交易。' },
             points: [
@@ -456,7 +456,7 @@
             ]
           },
           {
-            img: RES('green2') || 'assets/svc-green-2.png',
+            img: RES('green2') || 'assets/svc-green-2.webp',
             title: { en: 'Traceable green energy, delivered end-to-end', zh: '可溯源的绿色用能，一站式交付' },
             body:  { en: 'GEN sizes your demand and offers multiple paths — international RECs (I-REC), domestic GEC, and VPPA. Every green attribute has a clear, unique, third-party-verifiable origin with online traceability, so nothing is double-counted.', zh: 'GEN 帮你测算需求，提供国际绿证 I-REC、国内绿证 GEC、VPPA 虚拟电力采购等多种路径；每一份绿色权益来源清晰、唯一、可第三方鉴证，并支持在线溯源，确保不被重复计算。' },
             pointsLabel: { en: 'Deliverables', zh: '交付物' },
@@ -468,7 +468,7 @@
             ]
           },
           {
-            img: RES('green3') || 'assets/svc-green-3.png',
+            img: RES('green3') || 'assets/svc-green-3.webp',
             title: { en: 'From renewable source to your compliance proof — fully traceable', zh: '从可再生电站到你的合规凭证，全程可查' },
             bodyLabel: { en: "Who it's for", zh: '适用对象' },
             body:  { en: 'Meeting customer green-power / RE100 requirements · exports requiring renewables · offsetting CBAM costs · green-factory / LEED certification', zh: '需满足客户绿电要求 / RE100 · 出口被要求使用可再生电力 · 做了 CBAM 想抵扣碳成本 · 申报绿色工厂 / LEED 认证' },
@@ -544,7 +544,7 @@
     function buildContentPage(p){
       var page = document.createElement('div'); page.className = 'svc-page svc-page-content';
       var fig = document.createElement('div'); fig.className = 'svc-fig';
-      var img = document.createElement('img'); img.src = p.img; img.alt = ''; img.loading = 'eager';
+      var img = document.createElement('img'); img.src = p.img; img.alt = ''; img.loading = 'lazy';
       img.addEventListener('load', function(){ fitSvcHeight(); });
       fig.appendChild(img);
       var copy = document.createElement('div'); copy.className = 'svc-copy';
