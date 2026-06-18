@@ -631,6 +631,26 @@
     });
     window.addEventListener('resize', function(){ if (svc.classList.contains('open')) fitSvcHeight(); });
 
+    initBackToTop();
+
     applyLang(lang);
+  }
+
+  /* ---------- Back to top ---------- */
+  function initBackToTop(){
+    if (document.querySelector('.to-top')) return;
+    var btn = document.createElement('button');
+    btn.className = 'to-top';
+    btn.type = 'button';
+    btn.setAttribute('aria-label', lang === 'zh' ? '回到顶部' : 'Back to top');
+    btn.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V6M5 12l7-7 7 7"/></svg>';
+    document.body.appendChild(btn);
+    btn.addEventListener('click', function(){
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    var ticking = false;
+    function update(){ ticking = false; btn.classList.toggle('show', (window.pageYOffset || document.documentElement.scrollTop) > 480); }
+    window.addEventListener('scroll', function(){ if (!ticking){ ticking = true; requestAnimationFrame(update); } }, { passive: true });
+    update();
   }
 })();
