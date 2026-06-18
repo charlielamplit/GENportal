@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="blue">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Green Power & RECs · GEN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=8">
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav scrolled" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html" aria-label="GEN home">
+      <span class="brand-mark" role="img" aria-label="GEN"></span>
+      <span class="brand-text"><b>GEN</b><small>Global Economic Network</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" data-en="Home" data-zh="首页">Home</a>
+      <div class="nav-dd">
+        <button data-en="Services ▾" data-zh="服务 ▾">Services ▾</button>
+        <div class="nav-dd-menu">
+          <a href="service-pcf.html"><span class="ddi-num">01</span><span class="ddi-t" data-en="Product Carbon Footprint" data-zh="产品碳足迹核算">Product Carbon Footprint</span></a>
+          <a href="service-ghg.html"><span class="ddi-num">02</span><span class="ddi-t" data-en="Organizational GHG Inventory" data-zh="组织温室气体盘查">Organizational GHG Inventory</span></a>
+          <a href="service-cbam.html"><span class="ddi-num">03</span><span class="ddi-t" data-en="CBAM Reporting" data-zh="CBAM 申报">CBAM Reporting</span></a>
+          <a href="service-esg.html"><span class="ddi-num">04</span><span class="ddi-t" data-en="ESG Reporting" data-zh="ESG 报告撰写">ESG Reporting</span></a>
+          <a href="service-green-power.html"><span class="ddi-num">05</span><span class="ddi-t" data-en="Green Power & RECs" data-zh="绿电绿证采购">Green Power &amp; RECs</span></a>
+        </div>
+      </div>
+      <a href="index.html#framework" data-en="Framework" data-zh="3C 框架">Framework</a>
+      <a href="index.html#advisory" data-en="Advisory" data-zh="顾问委员会">Advisory</a>
+      <a href="about.html" data-en="About" data-zh="关于">About</a>
+      <a href="index.html#contact" data-en="Contact" data-zh="联系">Contact</a>
+    </nav>
+    <div class="nav-tools">
+      <div class="lang-toggle">
+        <button data-lang-btn="zh">中</button>
+        <button data-lang-btn="en" class="active">EN</button>
+      </div>
+      <div style="position:relative">
+        <button class="theme-btn" id="themeBtn" aria-label="Switch theme"><span class="dot"></span></button>
+        <div class="theme-pop" id="themePop">
+          <h5 data-en="Choose a visual style" data-zh="选择视觉风格">Choose a visual style</h5>
+          <button class="theme-card" data-theme-card="green"><span class="ring ring-green"></span><span><span class="tc-t" data-en="Sustainable Growth" data-zh="可持续绿">Sustainable Growth</span><br><span class="tc-s" data-en="Emerald · fresh · future" data-zh="祖母绿 · 清新 · 未来">Emerald · fresh · future</span></span><svg class="tc-check ico" viewBox="0 0 24 24" style="width:20px;height:20px"><path d="M20 6 9 17l-5-5"/></svg></button>
+          <button class="theme-card" data-theme-card="blue"><span class="ring ring-blue"></span><span><span class="tc-t" data-en="Global Trust" data-zh="寰宇蓝金">Global Trust</span><br><span class="tc-s" data-en="Navy · gold · diplomatic" data-zh="深蓝 · 金色 · 外交">Navy · gold · diplomatic</span></span><svg class="tc-check ico" viewBox="0 0 24 24" style="width:20px;height:20px"><path d="M20 6 9 17l-5-5"/></svg></button>
+        </div>
+      </div>
+      <a href="https://aiportaluat.bravowhale-uat.com/complianceRequirementAnalysis?inviteCode=CH_A124&amp;step=questionnaire" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" data-en="Start from here" data-zh="从这里开始">Start from here</a>
+      <button class="nav-burger" id="burger" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mm-close" id="mmClose">&times;</button>
+  <a href="index.html" data-en="Home" data-zh="首页">Home</a>
+  <a href="index.html#services" data-en="Services" data-zh="服务">Services</a>
+  <a href="index.html#framework" data-en="Framework" data-zh="3C 框架">Framework</a>
+  <a href="index.html#advisory" data-en="Advisory" data-zh="顾问委员会">Advisory</a>
+  <a href="about.html" data-en="About" data-zh="关于">About</a>
+  <a href="index.html#contact" data-en="Contact" data-zh="联系">Contact</a>
+  <div class="mm-tools">
+    <div class="lang-toggle"><button data-lang-btn="zh">中</button><button data-lang-btn="en" class="active">EN</button></div>
+    <button class="theme-card" data-theme-card="green" style="width:auto;margin:0"><span class="ring ring-green"></span><span class="tc-t">Green</span></button>
+    <button class="theme-card" data-theme-card="blue" style="width:auto;margin:0"><span class="ring ring-blue"></span><span class="tc-t">Blue</span></button>
+  </div>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section class="detail-hero">
+  <div class="wrap detail-hero-grid">
+    <div>
+      <div class="breadcrumb">
+        <a href="index.html" data-en="Home" data-zh="首页">Home</a><span class="sep">/</span>
+        <a href="index.html#services" data-en="Services" data-zh="服务">Services</a><span class="sep">/</span>
+        <span data-en="Green Power & RECs" data-zh="绿电绿证采购">Green Power &amp; RECs</span>
+      </div>
+      <span class="eyebrow" style="color:var(--c-accent)" data-en="Service 05 · RE100 / GEC" data-zh="服务 05 · RE100 / 绿证">Service 05 · RE100 / GEC</span>
+      <h1 data-en="Green Power & RECs" data-zh="绿电绿证采购" style="margin-top:14px">Green Power &amp; RECs</h1>
+      <div class="zh-sub" data-en="Cut emissions & offset CBAM costs" data-zh="降碳并抵扣碳关税成本">Cut emissions & offset CBAM costs</div>
+      <p class="lede" data-en="We help you buy green power or RECs — official proof you've used renewable energy like wind and solar — to cut emissions, meet client requirements, or offset CBAM costs." data-zh="帮企业买到“绿色电力”或“绿证”（证明用了风电、光伏等可再生能源的官方凭证），用于降碳、满足客户绿电要求或抵扣 CBAM 碳关税成本。">We help you buy green power or RECs — official proof you've used renewable energy like wind and solar — to cut emissions, meet client requirements, or offset CBAM costs.</p>
+      <div class="hero-cta">
+        <a href="#" class="btn btn-primary" data-service-modal="green" data-en="Explore Service" data-zh="了解服务">Explore Service <svg class="ico arr" viewBox="0 0 24 24" style="width:18px;height:18px"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="index.html#contact" class="btn btn-ghost on-dark" data-en="Get a quote" data-zh="咨询报价">Get a quote</a>
+      </div>
+    </div>
+    <div class="svc-mock">
+      <div class="svc-mock-dots"><i></i><i></i><i></i></div>
+      <div class="dgm">
+        <div class="pcf-ring"></div>
+        <div class="pcf-center"><b data-en="Green Power" data-zh="绿色电力">Green Power</b><span>RE100 · GEC</span></div>
+        <div class="pcf-node" style="top:14%;left:50%"><span class="nn">01</span><span class="nl" data-en="Wind" data-zh="风电">Wind</span><span class="ni"><svg class="ico" viewBox="0 0 24 24"><path d="M12 12a3 3 0 1 0 0-.01"/><path d="M12 12V3a4 4 0 0 0-4 4M12 12l7.8 4.5a4 4 0 0 0 .2-5.6M12 12l-7.8 4.5a4 4 0 0 1 3.8 1.6"/></svg></span></div>
+        <div class="pcf-node" style="top:50%;left:84%"><span class="nn">02</span><span class="nl" data-en="Solar" data-zh="光伏">Solar</span><span class="ni"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></span></div>
+        <div class="pcf-node" style="top:86%;left:50%"><span class="nn">03</span><span class="nl" data-en="Hydro" data-zh="水电">Hydro</span><span class="ni"><svg class="ico" viewBox="0 0 24 24"><path d="M12 2s6 7 6 12a6 6 0 0 1-12 0c0-5 6-12 6-12z"/></svg></span></div>
+        <div class="pcf-node" style="top:50%;left:16%"><span class="nn">04</span><span class="nl" data-en="RECs" data-zh="绿证">RECs</span><span class="ni"><svg class="ico" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg></span></div>
+      </div>
+      <div class="svc-mock-num">05</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IT DOES -->
+<section class="detail-section">
+  <div class="wrap">
+   <div class="detail-narrow">
+    <span class="eyebrow" data-en="What it does" data-zh="这项服务解决什么">What it does</span>
+    <h2 style="margin-top:14px" data-en="Buy the right amount of green power — the smart way" data-zh="把绿电绿证买对、买得划算">Buy the right amount of green power — the smart way</h2>
+    <p class="detail-lead" data-en="Green power and Renewable Energy Certificates (RECs) are the official proof that your electricity came from wind, solar and other renewables. We size how much you need, procure the certificates or connect you to a green-power exchange, organize the purchase records, and — combined with your carbon inventory and CBAM position — show you the most cost-effective way to buy." data-zh="绿电与绿证（RECs）是证明用电来自风电、光伏等可再生能源的官方凭证。我们测算您需要多少，帮您采购绿证或对接绿电交易平台，整理好采购凭证，并结合碳盘查与 CBAM 情况，给出“怎么买最划算”的方案。">Green power and Renewable Energy Certificates (RECs) are the official proof that your electricity came from wind, solar and other renewables. We size how much you need, procure the certificates or connect you to a green-power exchange, organize the purchase records, and — combined with your carbon inventory and CBAM position — show you the most cost-effective way to buy.</p>
+   </div>
+  </div>
+</section>
+
+<!-- WHO NEEDS IT -->
+<section class="detail-section alt">
+  <div class="wrap">
+    <span class="eyebrow" data-en="Who needs it" data-zh="什么样的企业需要">Who needs it</span>
+    <h2 style="margin-top:14px" data-en="Companies decarbonizing or asked to use green power" data-zh="要降碳或被要求用绿电的企业">Companies decarbonizing or asked to use green power</h2>
+    <p class="detail-lead" style="max-width:60ch" data-en="If you want to cut emissions, are committing to RE100, are required to use green power for exports, or have done CBAM and want to offset costs, this is for you." data-zh="如果您想降碳、要做 RE100（100% 绿电）、出口被要求用绿电，或做了 CBAM 想抵扣成本，这项服务适合您。">If you want to cut emissions, are committing to RE100, are required to use green power for exports, or have done CBAM and want to offset costs, this is for you.</p>
+    <div class="who-grid">
+      <div class="who-card"><div class="wc-ico"><svg class="ico ico-lg" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg></div><p data-en="Decarbonization goals" data-zh="降碳目标">Decarbonization goals</p></div>
+      <div class="who-card"><div class="wc-ico"><svg class="ico ico-lg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg></div><p data-en="RE100 commitments" data-zh="RE100 承诺">RE100 commitments</p></div>
+      <div class="who-card"><div class="wc-ico"><svg class="ico ico-lg" viewBox="0 0 24 24"><path d="M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z"/></svg></div><p data-en="Client green-power demand" data-zh="客户绿电要求">Client green-power demand</p></div>
+      <div class="who-card"><div class="wc-ico"><svg class="ico ico-lg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3a14 14 0 0 0 0 18M12 3a14 14 0 0 1 0 18M3.5 9h17M3.5 15h17"/></svg></div><p data-en="Offset CBAM costs" data-zh="抵扣 CBAM 成本">Offset CBAM costs</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT'S INCLUDED -->
+<section class="detail-section">
+  <div class="wrap">
+    <span class="eyebrow" data-en="What's included" data-zh="服务内容与版本">What's included</span>
+    <h2 style="margin-top:14px" data-en="Two tiers — from sourcing to a full strategy" data-zh="两档版本 — 从采购到完整策略">Two tiers — from sourcing to a full strategy</h2>
+    <div class="ptable-wrap">
+      <table class="ptable">
+        <thead>
+          <tr>
+            <th data-en="Service" data-zh="服务内容">Service</th>
+            <th data-en="Standard" data-zh="基础版">Standard<span class="tier-tag" data-en="Quote" data-zh="咨询报价">Quote</span></th>
+            <th data-en="Premium" data-zh="升级版">Premium<span class="tier-tag" data-en="Quote" data-zh="咨询报价">Quote</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-en="Calculate how much green power / RECs you need" data-zh="测算企业需要多少绿电 / 绿证">Calculate how much green power / RECs you need</td>
+            <td><span class="ck"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+            <td><span class="ck"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+          </tr>
+          <tr>
+            <td data-en="Procure RECs & organize purchase records" data-zh="帮助采购绿证、整理好采购凭证">Procure RECs &amp; organize purchase records</td>
+            <td><span class="ck"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+            <td><span class="ck"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+          </tr>
+          <tr>
+            <td data-en="Connect to a green-power exchange & buy power directly" data-zh="对接绿电交易平台、直接购买绿电">Connect to a green-power exchange &amp; buy power directly</td>
+            <td><span class="dash">—</span></td>
+            <td><span class="ck"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+          </tr>
+          <tr>
+            <td data-en="“Best-value” plan combined with your GHG inventory & CBAM" data-zh="结合碳盘查 / CBAM，给出“怎么买最划算”的方案">“Best-value” plan combined with your GHG inventory &amp; CBAM</td>
+            <td><span class="dash">—</span></td>
+            <td><span class="ck"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+          </tr>
+          <tr class="price-row">
+            <td data-en="Pricing" data-zh="价格">Pricing</td>
+            <td colspan="2" style="text-align:center"><span class="price-quote" data-en="Tailored to your usage & needs — get a plan and quote" data-zh="按用电规模与需求定制 — 咨询获取方案与报价">Tailored to your usage &amp; needs — get a plan and quote</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="ptable-note" data-en="Final pricing is confirmed after a project assessment and formal contract. The cost of the green power / RECs themselves, exchange fees and special requirements are quoted separately." data-zh="最终报价以项目评估与正式合同为准。绿电 / 绿证本身费用、交易平台费及特别要求等另行计算。">Final pricing is confirmed after a project assessment and formal contract. The cost of the green power / RECs themselves, exchange fees and special requirements are quoted separately.</p>
+  </div>
+</section>
+
+<!-- WHY GEN -->
+<section class="detail-section alt">
+  <div class="wrap">
+    <span class="eyebrow" data-en="Why GEN" data-zh="我们的优势">Why GEN</span>
+    <h2 style="margin-top:14px" data-en="Buy the right amount, the right way" data-zh="该买多少、怎么买，帮您算清楚">Buy the right amount, the right way</h2>
+    <div class="adv-points">
+      <div class="adv-point">
+        <span class="ap-ico"><svg class="ico" viewBox="0 0 24 24"><path d="M9 7h6M9 11h6M9 15h4"/><rect x="4" y="3" width="16" height="18" rx="2"/></svg></span>
+        <div><h4 data-en="Right-size your purchase" data-zh="算清该买多少">Right-size your purchase</h4><p data-en="We calculate exactly how much green power or how many RECs you actually need — no over-buying." data-zh="精确测算您到底需要多少绿电 / 绿证，不多买、不浪费。">We calculate exactly how much green power or how many RECs you actually need — no over-buying.</p></div>
+      </div>
+      <div class="adv-point">
+        <span class="ap-ico"><svg class="ico" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13l2 2 4-4"/></svg></span>
+        <div><h4 data-en="Procurement & clean records" data-zh="采购与凭证整理">Procurement &amp; clean records</h4><p data-en="We handle the purchase and organize tidy, audit-ready certificate records." data-zh="帮您完成采购，并整理好可供核查的采购凭证。">We handle the purchase and organize tidy, audit-ready certificate records.</p></div>
+      </div>
+      <div class="adv-point">
+        <span class="ap-ico"><svg class="ico" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></span>
+        <div><h4 data-en="Offset analysis" data-zh="抵扣测算">Offset analysis</h4><p data-en="We show whether and how your green-power purchase can offset CBAM costs — so it pays off." data-zh="帮您测算绿电采购能否、如何抵扣 CBAM 成本，少花冤枉钱。">We show whether and how your green-power purchase can offset CBAM costs — so it pays off.</p></div>
+      </div>
+      <div class="adv-point">
+        <span class="ap-ico"><svg class="ico" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96 12 12l8.73-5.04M12 22V12"/></svg></span>
+        <div><h4 data-en="Connected to your carbon data" data-zh="与碳数据互通">Connected to your carbon data</h4><p data-en="Plans build on your GHG inventory and CBAM work on the GEN platform — one connected picture." data-zh="方案基于 GEN 平台上的碳盘查与 CBAM 数据，全局打通、决策更准。">Plans build on your GHG inventory and CBAM work on the GEN platform — one connected picture.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STANDARDS -->
+<section class="detail-section">
+  <div class="wrap">
+    <span class="eyebrow" data-en="Applicable standards" data-zh="适用标准">Applicable standards</span>
+    <h2 style="margin-top:14px" data-en="Recognized renewable-energy instruments" data-zh="受认可的可再生能源凭证">Recognized renewable-energy instruments</h2>
+    <div class="std-row">
+      <div class="std-badge"><span class="sb-ico"><svg class="ico ico-lg" viewBox="0 0 24 24"><path d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/><path d="M8.5 13.5L7 22l5-3 5 3-1.5-8.5"/></svg></span><div><b>RE100</b><span data-en="100% renewable electricity" data-zh="100% 可再生电力">100% renewable electricity</span></div></div>
+      <div class="std-badge"><span class="sb-ico"><svg class="ico ico-lg" viewBox="0 0 24 24"><path d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/><path d="M8.5 13.5L7 22l5-3 5 3-1.5-8.5"/></svg></span><div><b>GEC</b><span data-en="China Green Electricity Certificate" data-zh="中国绿色电力证书">China Green Electricity Certificate</span></div></div>
+      <div class="std-badge"><span class="sb-ico"><svg class="ico ico-lg" viewBox="0 0 24 24"><path d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/><path d="M8.5 13.5L7 22l5-3 5 3-1.5-8.5"/></svg></span><div><b>I-REC</b><span data-en="International REC standard" data-zh="国际绿证标准">International REC standard</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- RELATED -->
+<section class="detail-section alt">
+  <div class="wrap">
+    <span class="eyebrow" data-en="Related services" data-zh="相关服务">Related services</span>
+    <h2 style="margin-top:14px" data-en="Data-connected — combine and save" data-zh="数据互通 — 组合更省成本">Data-connected — combine and save</h2>
+    <div class="rel-grid">
+      <a class="rel-card" href="service-cbam.html">
+        <span class="rc-ico"><svg class="ico ico-lg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3a14 14 0 0 0 0 18M12 3a14 14 0 0 1 0 18M3.5 9h17M3.5 15h17"/></svg></span>
+        <h4 data-en="CBAM Reporting" data-zh="CBAM 申报">CBAM Reporting</h4>
+        <p data-en="Green power can offset your CBAM costs." data-zh="绿电可用于抵扣 CBAM 碳关税成本。">Green power can offset your CBAM costs.</p>
+        <span class="textlink" data-en="Learn more" data-zh="了解更多">Learn more <svg class="ico arr" viewBox="0 0 24 24" style="width:15px;height:15px"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="rel-card" href="service-ghg.html">
+        <span class="rc-ico"><svg class="ico ico-lg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></span>
+        <h4 data-en="GHG Inventory" data-zh="组织温室气体盘查">GHG Inventory</h4>
+        <p data-en="Know your emissions before you offset." data-zh="先算清排放，再决定怎么买绿电。">Know your emissions before you offset.</p>
+        <span class="textlink" data-en="Learn more" data-zh="了解更多">Learn more <svg class="ico arr" viewBox="0 0 24 24" style="width:15px;height:15px"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="rel-card" href="service-pcf.html">
+        <span class="rc-ico"><svg class="ico ico-lg" viewBox="0 0 24 24"><path d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/><path d="M8.5 13.5 7 22l5-3 5 3-1.5-8.5"/></svg></span>
+        <h4 data-en="Product Carbon Footprint" data-zh="产品碳足迹核算">Product Carbon Footprint</h4>
+        <p data-en="Lower a product's footprint with green power." data-zh="用绿电降低单件产品的碳足迹。">Lower a product's footprint with green power.</p>
+        <span class="textlink" data-en="Learn more" data-zh="了解更多">Learn more <svg class="ico arr" viewBox="0 0 24 24" style="width:15px;height:15px"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="wrap">
+    <div class="final-cta-inner">
+      <h2 data-en="Find the most cost-effective way to go green" data-zh="找到最划算的绿电采购方案">Find the most cost-effective way to go green</h2>
+      <p data-en="Tell us your power usage and goals — we'll size it and quote a plan." data-zh="告诉我们您的用电规模与目标，我们为您测算并报价方案。">Tell us your power usage and goals — we'll size it and quote a plan.</p>
+      <div class="btn-row">
+        <a href="#" class="btn btn-white" data-service-modal="green" data-en="Explore Service" data-zh="了解服务">Explore Service <svg class="ico arr" viewBox="0 0 24 24" style="width:18px;height:18px"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="mailto:hello@cngen.org" class="btn btn-outline-d" data-en="Get a quote" data-zh="咨询报价">Get a quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><span class="brand-mark" role="img" aria-label="GEN"></span><span class="brand-text"><b>GEN</b><small>Global Economic Network</small></span></a>
+        <p class="footer-slogan" data-en="Connect Beyond Borders, Grow Beyond Limits" data-zh="联接无界 增长无限">Connect Beyond Borders, Grow Beyond Limits</p>
+        <p class="footer-about" data-en="A flagship initiative under the Shanghai Jien Public Welfare Development Promotion Center, providing one-stop internationalization services for enterprises going global." data-zh="上海杰恩公益发展促进中心旗下核心项目，为企业提供国际化一站式出海服务。">A flagship initiative under the Shanghai Jien Public Welfare Development Promotion Center, providing one-stop internationalization services for enterprises going global.</p>
+      </div>
+      <div class="footer-col">
+        <h5 data-en="Services" data-zh="服务">Services</h5>
+        <ul>
+          <li><a href="service-pcf.html" data-en="Product Carbon Footprint" data-zh="产品碳足迹核算">Product Carbon Footprint</a></li>
+          <li><a href="service-ghg.html" data-en="GHG Inventory" data-zh="组织温室气体盘查">GHG Inventory</a></li>
+          <li><a href="service-cbam.html" data-en="CBAM Reporting" data-zh="CBAM 申报">CBAM Reporting</a></li>
+          <li><a href="service-esg.html" data-en="ESG Reporting" data-zh="ESG 报告撰写">ESG Reporting</a></li>
+          <li><a href="service-green-power.html" data-en="Green Power & RECs" data-zh="绿电绿证采购">Green Power &amp; RECs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-en="About" data-zh="关于">About</h5>
+        <ul>
+          <li><a href="about.html" data-en="Our Mission" data-zh="我们的使命">Our Mission</a></li>
+          <li><a href="index.html#framework" data-en="3C Framework" data-zh="3C 框架">3C Framework</a></li>
+          <li><a href="index.html#advisory" data-en="Advisory Board" data-zh="顾问委员会">Advisory Board</a></li>
+          <li><a href="index.html#contact" data-en="Contact" data-zh="联系我们">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-en="Contact" data-zh="联系">Contact</h5>
+        <div class="footer-contact-item"><svg class="ico" viewBox="0 0 24 24" style="width:17px;height:17px"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20"/></svg> www.cngen.org</div>
+        <div class="footer-contact-item"><svg class="ico" viewBox="0 0 24 24" style="width:17px;height:17px"><path d="M4 4h16v16H4z"/><path d="m4 6 8 6 8-6"/></svg> hello@cngen.org</div>
+        <div class="footer-qr">
+          <img src="assets/contact-qr.png" alt="WeChat QR code" width="116" height="116">
+          <span data-en="Add us on WeChat" data-zh="微信扫码联系我们">Add us on WeChat</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bot">
+      <span>© 2026 Global Economic Network. <span data-en="All rights reserved." data-zh="版权所有。">All rights reserved.</span></span>
+      <span data-en="One-stop: Compliant · Sustainable · Efficient" data-zh="一站式：合规 · 可持续 · 高效">One-stop: Compliant · Sustainable · Efficient</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js?v=8"></script>
+</body>
+</html>
+
+<style id="__om-edit-overrides">
+#svcModal .smodal-track >div:nth-child(1) { padding: 40px 40px 34px !important }
+#svcModal .smodal-track >div:nth-child(1) { padding: 48px 40px 40px !important }
+#svcModal .smodal-track >div:nth-child(1) { padding: 48px 40px !important }
+#svcModal .smodal-track >div:nth-child(1) { padding: 48px 40px 4801px !important }
+#svcModal .smodal-track >div:nth-child(1) { padding: 48px 40px 4px !important }
+#svcModal .smodal-track >div:nth-child(1) { padding: 40px 40px 34px !important }
+</style>

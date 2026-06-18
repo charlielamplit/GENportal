@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="blue">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About · GEN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=8">
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav scrolled" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html" aria-label="GEN home">
+      <span class="brand-mark" role="img" aria-label="GEN"></span>
+      <span class="brand-text"><b>GEN</b><small>Global Economic Network</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" data-en="Home" data-zh="首页">Home</a>
+      <div class="nav-dd">
+        <button data-en="Services ▾" data-zh="服务 ▾">Services ▾</button>
+        <div class="nav-dd-menu">
+          <a href="service-pcf.html"><span class="ddi-num">01</span><span class="ddi-t" data-en="Product Carbon Footprint" data-zh="产品碳足迹核算">Product Carbon Footprint</span></a>
+          <a href="service-ghg.html"><span class="ddi-num">02</span><span class="ddi-t" data-en="Organizational GHG Inventory" data-zh="组织温室气体盘查">Organizational GHG Inventory</span></a>
+          <a href="service-cbam.html"><span class="ddi-num">03</span><span class="ddi-t" data-en="CBAM Reporting" data-zh="CBAM 申报">CBAM Reporting</span></a>
+          <a href="service-esg.html"><span class="ddi-num">04</span><span class="ddi-t" data-en="ESG Reporting" data-zh="ESG 报告撰写">ESG Reporting</span></a>
+          <a href="service-green-power.html"><span class="ddi-num">05</span><span class="ddi-t" data-en="Green Power & RECs" data-zh="绿电绿证采购">Green Power &amp; RECs</span></a>
+        </div>
+      </div>
+      <a href="index.html#framework" data-en="Framework" data-zh="3C 框架">Framework</a>
+      <a href="index.html#advisory" data-en="Advisory" data-zh="顾问委员会">Advisory</a>
+      <a href="about.html" data-en="About" data-zh="关于">About</a>
+      <a href="index.html#contact" data-en="Contact" data-zh="联系">Contact</a>
+    </nav>
+    <div class="nav-tools">
+      <div class="lang-toggle">
+        <button data-lang-btn="zh">中</button>
+        <button data-lang-btn="en" class="active">EN</button>
+      </div>
+      <div style="position:relative">
+        <button class="theme-btn" id="themeBtn" aria-label="Switch theme"><span class="dot"></span></button>
+        <div class="theme-pop" id="themePop">
+          <h5 data-en="Choose a visual style" data-zh="选择视觉风格">Choose a visual style</h5>
+          <button class="theme-card" data-theme-card="green"><span class="ring ring-green"></span><span><span class="tc-t" data-en="Sustainable Growth" data-zh="可持续绿">Sustainable Growth</span><br><span class="tc-s" data-en="Emerald · fresh · future" data-zh="祖母绿 · 清新 · 未来">Emerald · fresh · future</span></span><svg class="tc-check ico" viewBox="0 0 24 24" style="width:20px;height:20px"><path d="M20 6 9 17l-5-5"/></svg></button>
+          <button class="theme-card" data-theme-card="blue"><span class="ring ring-blue"></span><span><span class="tc-t" data-en="Global Trust" data-zh="寰宇蓝金">Global Trust</span><br><span class="tc-s" data-en="Navy · gold · diplomatic" data-zh="深蓝 · 金色 · 外交">Navy · gold · diplomatic</span></span><svg class="tc-check ico" viewBox="0 0 24 24" style="width:20px;height:20px"><path d="M20 6 9 17l-5-5"/></svg></button>
+        </div>
+      </div>
+      <a href="https://aiportaluat.bravowhale-uat.com/complianceRequirementAnalysis?inviteCode=CH_A124&amp;step=questionnaire" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" data-en="Start from here" data-zh="从这里开始">Start from here</a>
+      <button class="nav-burger" id="burger" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mm-close" id="mmClose">&times;</button>
+  <a href="index.html" data-en="Home" data-zh="首页">Home</a>
+  <a href="index.html#services" data-en="Services" data-zh="服务">Services</a>
+  <a href="index.html#framework" data-en="Framework" data-zh="3C 框架">Framework</a>
+  <a href="index.html#advisory" data-en="Advisory" data-zh="顾问委员会">Advisory</a>
+  <a href="about.html" data-en="About" data-zh="关于">About</a>
+  <a href="index.html#contact" data-en="Contact" data-zh="联系">Contact</a>
+  <div class="mm-tools">
+    <div class="lang-toggle"><button data-lang-btn="zh">中</button><button data-lang-btn="en" class="active">EN</button></div>
+    <button class="theme-card" data-theme-card="green" style="width:auto;margin:0"><span class="ring ring-green"></span><span class="tc-t">Green</span></button>
+    <button class="theme-card" data-theme-card="blue" style="width:auto;margin:0"><span class="ring ring-blue"></span><span class="tc-t">Blue</span></button>
+  </div>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section class="detail-hero">
+  <div class="wrap">
+    <div class="breadcrumb">
+      <a href="index.html" data-en="Home" data-zh="首页">Home</a><span class="sep">/</span>
+      <span data-en="About" data-zh="关于">About</span>
+    </div>
+    <span class="eyebrow" style="color:var(--c-accent)" data-en="About Global Economic Network" data-zh="关于 GEN 全球经济发展联盟">About Global Economic Network</span>
+    <h1 style="margin-top:16px;max-width:18ch" data-en="A bridge for enterprises to integrate into the world" data-zh="助力企业深度融入世界的桥梁">A bridge for enterprises to integrate into the world</h1>
+    <div class="zh-sub" data-en="Connect Beyond Borders, Grow Beyond Limits" data-zh="联接无界 · 增长无限">联接无界 · 增长无限</div>
+  </div>
+</section>
+
+<!-- ABOUT + MISSION -->
+<section class="detail-section">
+  <div class="wrap about-intro-grid">
+    <div>
+      <span class="eyebrow" data-en="About us" data-zh="关于我们">About us</span>
+      <h2 style="margin-top:14px" data-en="One-stop services for going global" data-zh="国际化一站式出海服务">One-stop services for going global</h2>
+      <p class="detail-lead" data-en="GEN is a flagship initiative under the Shanghai Jien Public Welfare Development Promotion Center. Against the backdrop of a reshaping global economy, we provide enterprises with one-stop internationalization services." data-zh="GEN 是上海杰恩公益发展促进中心旗下的核心项目。在全球经济重构的背景下，为企业提供国际化一站式服务。">GEN is a flagship initiative under the Shanghai Jien Public Welfare Development Promotion Center. Against the backdrop of a reshaping global economy, we provide enterprises with one-stop internationalization services.</p>
+      <p class="detail-lead" data-en="We believe going global is not just expansion — it is safe, sustainable and deep integration into local markets." data-zh="我们相信，出海不只是扩张，更是安全、可持续、深度地“融进去”。">We believe going global is not just expansion — it is safe, sustainable and deep integration into local markets.</p>
+    </div>
+    <div class="mission-card">
+      <span class="eyebrow" data-en="Our mission" data-zh="我们的使命">Our mission</span>
+      <p data-en="Help Chinese enterprises view going global not just as expansion, but as safe, sustainable and deep integration — so they don't only “go out,” they truly “fit in.”" data-zh="协助中国企业不仅“走出去”，更能安全、深度、可持续地“融进去”。">Help Chinese enterprises view going global not just as expansion, but as safe, sustainable and deep integration — so they don't only "go out," they truly "fit in."</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3C FRAMEWORK -->
+<section class="detail-section alt">
+  <div class="wrap">
+    <span class="eyebrow" data-en="3C Framework" data-zh="3C 战略框架">3C Framework</span>
+    <h2 style="margin-top:14px" data-en="Certify — Comply — Compete" data-zh="认证 — 合规 — 竞争">Certify — Comply — Compete</h2>
+    <p class="detail-lead" style="max-width:62ch" data-en="Our work is organized around one integrated framework that covers your entire journey abroad." data-zh="我们的服务围绕一套一体化框架展开，覆盖出海全流程。">Our work is organized around one integrated framework that covers your entire journey abroad.</p>
+    <div class="who-grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
+      <div class="who-card">
+        <div class="wc-ico"><svg class="ico ico-lg" viewBox="0 0 24 24"><path d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/><path d="M8.5 13.5L7 22l5-3 5 3-1.5-8.5"/></svg></div>
+        <h4 style="font-size:18px;margin-bottom:8px" data-en="01 · Certify" data-zh="01 · 认证">01 · Certify</h4>
+        <p style="margin:0;font-size:14.5px;color:var(--c-text-muted);font-weight:400" data-en="UNGC-aligned ESG training & international certification — your passport to market access and trust." data-zh="基于 UNGC 十项原则的 ESG 培训与国际认证，赢得海外市场准入与信任。">UNGC-aligned ESG training &amp; international certification — your passport to market access and trust.</p>
+      </div>
+      <div class="who-card">
+        <div class="wc-ico"><svg class="ico ico-lg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h4 style="font-size:18px;margin-bottom:8px" data-en="02 · Comply" data-zh="02 · 合规">02 · Comply</h4>
+        <p style="margin:0;font-size:14.5px;color:var(--c-text-muted);font-weight:400" data-en="Domestic ODI filing & tax incentives, plus on-the-ground overseas legal and regulatory compliance." data-zh="境内 ODI 备案、税收激励，海外法律与监管遵循，出海全程合法稳健。">Domestic ODI filing &amp; tax incentives, plus on-the-ground overseas legal and regulatory compliance.</p>
+      </div>
+      <div class="who-card">
+        <div class="wc-ico"><svg class="ico ico-lg" viewBox="0 0 24 24"><path d="M3 21V10l6-4 6 4v11"/><path d="M3 21h18M15 21v-7l6-3v10M8 14h2M8 18h2"/></svg></div>
+        <h4 style="font-size:18px;margin-bottom:8px" data-en="03 · Compete" data-zh="03 · 竞争">03 · Compete</h4>
+        <p style="margin:0;font-size:14.5px;color:var(--c-text-muted);font-weight:400" data-en="Global resource network, flexible workforce & capability building to win in core markets." data-zh="全球资源网络、弹性人力与能力建设，链接核心市场实现品牌跃升。">Global resource network, flexible workforce &amp; capability building to win in core markets.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY GEN -->
+<section class="detail-section">
+  <div class="wrap">
+    <span class="eyebrow" data-en="Why GEN" data-zh="为什么选择 GEN">Why GEN</span>
+    <h2 style="margin-top:14px" data-en="Backing, standards, network and expertise" data-zh="背书、标准、网络与专长">Backing, standards, network and expertise</h2>
+    <div class="adv-points">
+      <div class="adv-point">
+        <span class="ap-ico"><svg class="ico" viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01"/></svg></span>
+        <div><h4 data-en="Government-backed partnership" data-zh="官方战略合作伙伴">Government-backed partnership</h4><p data-en="Official strategic partner of Pudong's overseas-expansion service center, integrating MOFCOM and NDRC policy resources." data-zh="浦东新区“企业走出去”综合服务中心官方战略合作伙伴，整合商务部 / 发改委政策资源。">Official strategic partner of Pudong's overseas-expansion service center, integrating MOFCOM and NDRC policy resources.</p></div>
+      </div>
+      <div class="adv-point">
+        <span class="ap-ico"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3a14 14 0 0 0 0 18M12 3a14 14 0 0 1 0 18M3.5 9h17M3.5 15h17"/></svg></span>
+        <div><h4 data-en="UNGC-aligned high standards" data-zh="UNGC 战略合作与国际高标准">UNGC-aligned high standards</h4><p data-en="In strategic collaboration with the UN Global Compact, with ESG work to international standards." data-zh="与联合国全球契约组织（UNGC）战略合作，ESG 工作对标国际高标准。">In strategic collaboration with the UN Global Compact, with ESG work to international standards.</p></div>
+      </div>
+      <div class="adv-point">
+        <span class="ap-ico"><svg class="ico" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+        <div><h4 data-en="Advisory board across 5 continents" data-zh="顾问委员会全球覆盖">Advisory board across 5 continents</h4><p data-en="19 global leaders pairing global vision with deep local insight." data-zh="19 位全球领袖，兼具全球视野与本土洞察。">19 global leaders pairing global vision with deep local insight.</p></div>
+      </div>
+      <div class="adv-point">
+        <span class="ap-ico"><svg class="ico" viewBox="0 0 24 24"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></span>
+        <div><h4 data-en="Core-industry expertise" data-zh="核心行业专长">Core-industry expertise</h4><p data-en="Cross-border law, finance, global strategy, and asset & ESG governance." data-zh="跨境法律、金融、全球战略、资产管理与 ESG 治理。">Cross-border law, finance, global strategy, and asset &amp; ESG governance.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CORE EXPERTISE -->
+<section class="detail-section alt">
+  <div class="wrap">
+    <span class="eyebrow" data-en="Core expertise" data-zh="核心行业专长">Core expertise</span>
+    <h2 style="margin-top:14px" data-en="Where our network goes deep" data-zh="我们网络深耕的领域">Where our network goes deep</h2>
+    <div class="expertise-grid">
+      <div class="exp-card"><div class="ec-ico"><svg class="ico ico-lg" viewBox="0 0 24 24"><path d="M12 3v18M5 7l7-4 7 4M4 21h16M6 11l-2 6h4zM18 11l-2 6h4z"/></svg></div><h4 data-en="Cross-border law & compliance" data-zh="跨境法律与合规">Cross-border law &amp; compliance</h4><p data-en="Navigating overseas legal and regulatory requirements." data-zh="应对海外法律与监管要求。">Navigating overseas legal and regulatory requirements.</p></div>
+      <div class="exp-card"><div class="ec-ico"><svg class="ico ico-lg" viewBox="0 0 24 24"><path d="M3 3v18h18M7 14l4-4 3 3 5-6"/></svg></div><h4 data-en="Finance & investment" data-zh="金融与投资">Finance &amp; investment</h4><p data-en="Cross-border capital, structuring and investment." data-zh="跨境资本、架构与投资。">Cross-border capital, structuring and investment.</p></div>
+      <div class="exp-card"><div class="ec-ico"><svg class="ico ico-lg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3.5 9h17M3.5 15h17M12 3a14 14 0 0 0 0 18M12 3a14 14 0 0 1 0 18"/></svg></div><h4 data-en="Global strategy consulting" data-zh="全球战略咨询">Global strategy consulting</h4><p data-en="Market entry and growth strategy across regions." data-zh="跨区域的市场进入与增长战略。">Market entry and growth strategy across regions.</p></div>
+      <div class="exp-card"><div class="ec-ico"><svg class="ico ico-lg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div><h4 data-en="Asset management & ESG governance" data-zh="资产管理与 ESG 治理">Asset management &amp; ESG governance</h4><p data-en="Sustainable asset management and ESG governance." data-zh="可持续资产管理与 ESG 治理。">Sustainable asset management and ESG governance.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ADVISORY CTA -->
+<section class="detail-section">
+  <div class="wrap detail-narrow" style="text-align:center;margin-inline:auto">
+    <span class="eyebrow centered" data-en="Global Advisory Board" data-zh="全球顾问委员会">Global Advisory Board</span>
+    <h2 style="margin-top:14px" data-en="19 global leaders across 5 continents" data-zh="19 位全球领袖，覆盖五大洲">19 global leaders across 5 continents</h2>
+    <p class="detail-lead" style="margin-inline:auto" data-en="Our advisory board spans Asia, Europe, North America, the Middle East and Africa." data-zh="顾问委员会覆盖亚洲、欧洲、北美、中东与非洲。">Our advisory board spans Asia, Europe, North America, the Middle East and Africa.</p>
+    <div style="margin-top:28px"><a href="index.html#advisory" class="btn btn-primary" data-en="Meet the board" data-zh="查看顾问委员会">Meet the board <svg class="ico arr" viewBox="0 0 24 24" style="width:18px;height:18px"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
+</section>
+
+<!-- MILESTONES -->
+<section class="detail-section alt">
+  <div class="wrap detail-narrow">
+    <span class="eyebrow" data-en="Milestones" data-zh="大事记">Milestones</span>
+    <h2 style="margin-top:14px" data-en="From an economic engine to a global connector" data-zh="从经济引擎到全球连接者">From an economic engine to a global connector</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-date" data-en="Mar 2026 · Paris" data-zh="2026.3 · 巴黎">Mar 2026 · Paris</div>
+        <h4 data-en="ChangeNOW 2026" data-zh="ChangeNOW 2026">ChangeNOW 2026</h4>
+        <p data-en="Led 7 Chinese sustainable enterprises to the world's largest summit for the planet, with a first-ever China Sustainability pavilion." data-zh="率 7 家中国可持续企业参展全球最大地球峰会，首设“中国可持续展区”。">Led 7 Chinese sustainable enterprises to the world's largest summit for the planet, with a first-ever China Sustainability pavilion.</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date" data-en="Mar 2026 · Shanghai" data-zh="2026.3 · 上海">Mar 2026 · Shanghai</div>
+        <h4 data-en="Yale 'Doox' cultural exchange" data-zh="耶鲁 Doox 合唱团文化交流">Yale 'Doox' cultural exchange</h4>
+        <p data-en="A performance at Shanghai Oriental Art Center attended by the deputy mayor and consuls general." data-zh="东方艺术中心演出，副市长与多国总领事出席。">A performance at Shanghai Oriental Art Center attended by the deputy mayor and consuls general.</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date" data-en="Sep 2026 · Shanghai" data-zh="2026.9 · 上海">Sep 2026 · Shanghai</div>
+        <h4 data-en="GEN Launch Ceremony" data-zh="GEN 成立盛典">GEN Launch Ceremony</h4>
+        <p data-en="A UN Resident Coordinator message and dozens of media outlets marked GEN's founding." data-zh="联合国驻华协调员致辞，数十家媒体报道，见证 GEN 成立。">A UN Resident Coordinator message and dozens of media outlets marked GEN's founding.</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date" data-en="2026 · Broadcast" data-zh="2026 · 媒体">2026 · Broadcast</div>
+        <h4 data-en="CGTN international interview" data-zh="CGTN 国际专访">CGTN international interview</h4>
+        <p data-en="Founder Linda Painan featured on GEN's strategy and the “My China” theme." data-zh="创始人 Linda Painan 畅谈 GEN 战略与“我看中国”主题。">Founder Linda Painan featured on GEN's strategy and the "My China" theme.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT CTA -->
+<section class="final-cta">
+  <div class="wrap">
+    <div class="final-cta-inner">
+      <h2 data-en="Let's build your path into global markets" data-zh="一起规划您的全球化之路">Let's build your path into global markets</h2>
+      <p data-en="Tell us your needs — get a tailored plan within 5 minutes." data-zh="留下需求，5 分钟内获得专属出海方案。">Tell us your needs — get a tailored plan within 5 minutes.</p>
+      <div class="btn-row">
+        <a href="mailto:hello@cngen.org" class="btn btn-white" data-en="Contact us" data-zh="联系我们">Contact us <svg class="ico arr" viewBox="0 0 24 24" style="width:18px;height:18px"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="index.html#services" class="btn btn-outline-d" data-en="Explore services" data-zh="浏览服务">Explore services</a>
+      </div>
+      <p style="margin-top:22px;font-family:var(--font-num);font-size:14px;opacity:.85">www.cngen.org · hello@cngen.org</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><span class="brand-mark" role="img" aria-label="GEN"></span><span class="brand-text"><b>GEN</b><small>Global Economic Network</small></span></a>
+        <p class="footer-slogan" data-en="Connect Beyond Borders, Grow Beyond Limits" data-zh="联接无界 增长无限">Connect Beyond Borders, Grow Beyond Limits</p>
+        <p class="footer-about" data-en="A flagship initiative under the Shanghai Jien Public Welfare Development Promotion Center, providing one-stop internationalization services for enterprises going global." data-zh="上海杰恩公益发展促进中心旗下核心项目，为企业提供国际化一站式出海服务。">A flagship initiative under the Shanghai Jien Public Welfare Development Promotion Center, providing one-stop internationalization services for enterprises going global.</p>
+      </div>
+      <div class="footer-col">
+        <h5 data-en="Services" data-zh="服务">Services</h5>
+        <ul>
+          <li><a href="service-pcf.html" data-en="Product Carbon Footprint" data-zh="产品碳足迹核算">Product Carbon Footprint</a></li>
+          <li><a href="service-ghg.html" data-en="GHG Inventory" data-zh="组织温室气体盘查">GHG Inventory</a></li>
+          <li><a href="service-cbam.html" data-en="CBAM Reporting" data-zh="CBAM 申报">CBAM Reporting</a></li>
+          <li><a href="service-esg.html" data-en="ESG Reporting" data-zh="ESG 报告撰写">ESG Reporting</a></li>
+          <li><a href="service-green-power.html" data-en="Green Power & RECs" data-zh="绿电绿证采购">Green Power &amp; RECs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-en="About" data-zh="关于">About</h5>
+        <ul>
+          <li><a href="about.html" data-en="Our Mission" data-zh="我们的使命">Our Mission</a></li>
+          <li><a href="index.html#framework" data-en="3C Framework" data-zh="3C 框架">3C Framework</a></li>
+          <li><a href="index.html#advisory" data-en="Advisory Board" data-zh="顾问委员会">Advisory Board</a></li>
+          <li><a href="index.html#contact" data-en="Contact" data-zh="联系我们">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-en="Contact" data-zh="联系">Contact</h5>
+        <div class="footer-contact-item"><svg class="ico" viewBox="0 0 24 24" style="width:17px;height:17px"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20"/></svg> www.cngen.org</div>
+        <div class="footer-contact-item"><svg class="ico" viewBox="0 0 24 24" style="width:17px;height:17px"><path d="M4 4h16v16H4z"/><path d="m4 6 8 6 8-6"/></svg> hello@cngen.org</div>
+        <div class="footer-qr">
+          <img src="assets/contact-qr.png" alt="WeChat QR code" width="116" height="116">
+          <span data-en="Add us on WeChat" data-zh="微信扫码联系我们">Add us on WeChat</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bot">
+      <span>© 2026 Global Economic Network. <span data-en="All rights reserved." data-zh="版权所有。">All rights reserved.</span></span>
+      <span data-en="One-stop: Compliant · Sustainable · Efficient" data-zh="一站式：合规 · 可持续 · 高效">One-stop: Compliant · Sustainable · Efficient</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js?v=8"></script>
+</body>
+</html>

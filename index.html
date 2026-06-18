@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="blue">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GEN · Global Economic Network</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=9">
+</head>
+<body>
+
+<!-- ============================ NAV ============================ -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="GEN home">
+      <span class="brand-mark" role="img" aria-label="GEN"></span>
+      <span class="brand-text">
+        <b>GEN</b>
+        <small>Global Economic Network</small>
+      </span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#top" data-en="Home" data-zh="首页">Home</a>
+      <div class="nav-dd">
+        <button data-en="Services ▾" data-zh="服务 ▾">Services ▾</button>
+        <div class="nav-dd-menu">
+          <a href="service-pcf.html"><span class="ddi-num">01</span><span class="ddi-t" data-en="Product Carbon Footprint" data-zh="产品碳足迹核算">Product Carbon Footprint</span></a>
+          <a href="service-ghg.html"><span class="ddi-num">02</span><span class="ddi-t" data-en="Organizational GHG Inventory" data-zh="组织温室气体盘查">Organizational GHG Inventory</span></a>
+          <a href="service-cbam.html"><span class="ddi-num">03</span><span class="ddi-t" data-en="CBAM Reporting" data-zh="CBAM 申报">CBAM Reporting</span></a>
+          <a href="service-esg.html"><span class="ddi-num">04</span><span class="ddi-t" data-en="ESG Reporting" data-zh="ESG 报告撰写">ESG Reporting</span></a>
+          <a href="service-green-power.html"><span class="ddi-num">05</span><span class="ddi-t" data-en="Green Power & RECs" data-zh="绿电绿证采购">Green Power &amp; RECs</span></a>
+        </div>
+      </div>
+      <a href="#framework" data-en="Framework" data-zh="3C 框架">Framework</a>
+      <a href="#advisory" data-en="Advisory" data-zh="顾问委员会">Advisory</a>
+      <a href="about.html" data-en="About" data-zh="关于">About</a>
+      <a href="#contact" data-en="Contact" data-zh="联系">Contact</a>
+    </nav>
+
+    <div class="nav-tools">
+      <div class="lang-toggle">
+        <button data-lang-btn="zh">中</button>
+        <button data-lang-btn="en" class="active">EN</button>
+      </div>
+      <div style="position:relative">
+        <button class="theme-btn" id="themeBtn" aria-label="Switch theme"><span class="dot"></span></button>
+        <div class="theme-pop" id="themePop">
+          <h5 data-en="Choose a visual style" data-zh="选择视觉风格">Choose a visual style</h5>
+          <button class="theme-card" data-theme-card="green">
+            <span class="ring ring-green"></span>
+            <span>
+              <span class="tc-t" data-en="Sustainable Growth" data-zh="可持续绿">Sustainable Growth</span><br>
+              <span class="tc-s" data-en="Emerald · fresh · future" data-zh="祖母绿 · 清新 · 未来">Emerald · fresh · future</span>
+            </span>
+            <svg class="tc-check ico" viewBox="0 0 24 24" style="width:20px;height:20px"><path d="M20 6 9 17l-5-5"/></svg>
+          </button>
+          <button class="theme-card" data-theme-card="blue">
+            <span class="ring ring-blue"></span>
+            <span>
+              <span class="tc-t" data-en="Global Trust" data-zh="寰宇蓝金">Global Trust</span><br>
+              <span class="tc-s" data-en="Navy · gold · diplomatic" data-zh="深蓝 · 金色 · 外交">Navy · gold · diplomatic</span>
+            </span>
+            <svg class="tc-check ico" viewBox="0 0 24 24" style="width:20px;height:20px"><path d="M20 6 9 17l-5-5"/></svg>
+          </button>
+        </div>
+      </div>
+      <a href="https://aiportaluat.bravowhale-uat.com/complianceRequirementAnalysis?inviteCode=CH_A124&amp;step=questionnaire" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" data-en="Start from here" data-zh="从这里开始">Start from here</a>
+      <button class="nav-burger" id="burger" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mm-close" id="mmClose">&times;</button>
+  <a href="#top" data-en="Home" data-zh="首页">Home</a>
+  <a href="#services" data-en="Services" data-zh="服务">Services</a>
+  <a href="#framework" data-en="Framework" data-zh="3C 框架">Framework</a>
+  <a href="#advisory" data-en="Advisory" data-zh="顾问委员会">Advisory</a>
+  <a href="about.html" data-en="About" data-zh="关于">About</a>
+  <a href="#contact" data-en="Contact" data-zh="联系">Contact</a>
+  <div class="mm-tools">
+    <div class="lang-toggle">
+      <button data-lang-btn="zh">中</button>
+      <button data-lang-btn="en" class="active">EN</button>
+    </div>
+    <button class="theme-card" data-theme-card="green" style="width:auto;margin:0"><span class="ring ring-green"></span><span class="tc-t">Green</span></button>
+    <button class="theme-card" data-theme-card="blue" style="width:auto;margin:0"><span class="ring ring-blue"></span><span class="tc-t">Blue</span></button>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- ============================ HERO ============================ -->
+<section class="hero">
+  <div class="hero-photo" role="img" aria-label="Wind turbines on rolling green hills at sunrise"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="hero-badge">
+        <span class="pulse"></span>
+        <span data-en="Government-Backed · International Standards · One-Stop" data-zh="官方背书 · 国际标准 · 一站式出海">Government-Backed · International Standards · One-Stop</span>
+      </span>
+      <h1 data-en="{{Connect}} Beyond Borders, {{Grow}} Beyond Limits" data-zh="联接{{无界}} · 增长{{无限}}">Connect Beyond Borders, Grow Beyond Limits</h1>
+      <p class="hero-sub" data-en="Global compliance — simple, efficient, reliable." data-zh="全球合规——简单、高效、可靠。">Global compliance — simple, efficient, reliable.</p>
+      <div class="hero-info">
+        <span data-en="100+ Global Clients" data-zh="100+ 全球客户">100+ Global Clients</span>
+        <span class="dot-sep"></span>
+        <span data-en="19 Global Advisors" data-zh="19 位全球顾问">19 Global Advisors</span>
+        <span class="dot-sep"></span>
+        <span data-en="5 Continents" data-zh="覆盖五大洲">5 Continents</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary" data-en="Start from here" data-zh="从这里开始">Start from here <svg class="ico arr" viewBox="0 0 24 24" style="width:18px;height:18px"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="#contact" class="btn btn-ghost on-dark" data-en="Book a Consultation" data-zh="预约咨询">Book a Consultation</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-stat-float hsf-1">
+        <div class="n">19</div>
+        <div class="l" data-en="Global Advisors" data-zh="全球顾问">Global Advisors</div>
+      </div>
+      <div class="hero-stat-float hsf-2 hsf-clients" tabindex="0">
+        <div class="n">100+</div>
+        <div class="l" data-en="Global Clients" data-zh="全球客户">Global Clients</div>
+      </div>
+      <div class="hero-stat-float hsf-3">
+        <div class="n">5</div>
+        <div class="l" data-en="Continents" data-zh="覆盖大洲">Continents</div>
+      </div>
+      <div class="hsf-graph" id="cliGraph" aria-hidden="true">
+        <div class="hsf-cap">
+          <span class="hsf-cap-eye" data-en="Global Clients" data-zh="全球客户">Global Clients</span>
+          <b data-en="100+ organizations, 30+ industries" data-zh="100+ 组织，覆盖 30+ 行业">100+ organizations, 30+ industries</b>
+          <span class="hsf-cap-sub" data-en="Fortune 500 groups &amp; category leaders" data-zh="世界 500 强集团与行业领军者">Fortune 500 groups &amp; category leaders</span>
+        </div>
+        <svg class="hsf-edges" id="cliEdges" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
+        <span class="hsf-hub"><b>100+</b><small data-en="Clients" data-zh="客户">Clients</small></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FLOATING SERVICE CARDS ============================ -->
+<section class="svc-float">
+  <div class="wrap">
+    <div class="svc-float-grid">
+      <a href="service-pcf.html" class="svc-fcard reveal">
+        <span class="svc-ico"><svg class="ico ico-lg" viewBox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v6l9 4 9-4V7"/><path d="M12 11v10"/></svg></span>
+        <h4 data-en="Product Carbon Footprint" data-zh="产品碳足迹核算">Product Carbon Footprint</h4>
+        <p data-en="Quantify a product's full life-cycle emissions" data-zh="量化产品全生命周期碳排放">Quantify a product's full life-cycle emissions</p>
+        <span class="textlink" data-en="Learn more" data-zh="了解更多">Learn more <svg class="ico arr" viewBox="0 0 24 24" style="width:15px;height:15px"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a href="service-ghg.html" class="svc-fcard reveal d1">
+        <span class="svc-ico"><svg class="ico ico-lg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></span>
+        <h4 data-en="Organizational GHG Inventory" data-zh="组织温室气体盘查">Organizational GHG Inventory</h4>
+        <p data-en="A full carbon check-up for your company" data-zh="为企业做一次“碳体检”">A full carbon check-up for your company</p>
+        <span class="textlink" data-en="Learn more" data-zh="了解更多">Learn more <svg class="ico arr" viewBox="0 0 24 24" style="width:15px;height:15px"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a href="service-cbam.html" class="svc-fcard reveal d2">
+        <span class="svc-ico"><svg class="ico ico-lg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3a14 14 0 0 0 0 18M12 3a14 14 0 0 1 0 18M3.5 9h17M3.5 15h17"/></svg></span>
+        <h4 data-en="CBAM Reporting" data-zh="CBAM 申报">CBAM Reporting</h4>
+        <p data-en="Meet EU carbon border (CBAM) rules" data-zh="满足欧盟碳关税合规要求">Meet EU carbon border (CBAM) rules</p>
+        <span class="textlink" data-en="Learn more" data-zh="了解更多">Learn more <svg class="ico arr" viewBox="0 0 24 24" style="width:15px;height:15px"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a href="service-esg.html" class="svc-fcard reveal d3">
+        <span class="svc-ico"><svg class="ico ico-lg" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span>
+        <h4 data-en="ESG Reporting" data-zh="ESG 报告撰写">ESG Reporting</h4>
+        <p data-en="Meet listing & disclosure requirements" data-zh="满足上市与披露要求">Meet listing &amp; disclosure requirements</p>
+        <span class="textlink" data-en="Learn more" data-zh="了解更多">Learn more <svg class="ico arr" viewBox="0 0 24 24" style="width:15px;height:15px"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a href="service-green-power.html" class="svc-fcard reveal d4">
+        <span class="svc-ico"><svg class="ico ico-lg" viewBox="0 0 24 24"><path d="M13 2L4.5 13.5H11l-1 8.5L19.5 10H13z"/></svg></span>
+        <h4 data-en="Green Power & RECs" data-zh="绿电绿证采购">Green Power &amp; RECs</h4>
+        <p data-en="Cut emissions & offset carbon costs" data-zh="降碳并抵扣碳关税成本">Cut emissions &amp; offset carbon costs</p>
+        <span class="textlink" data-en="Learn more" data-zh="了解更多">Learn more <svg class="ico arr" viewBox="0 0 24 24" style="width:15px;height:15px"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ TRUSTED BY (ENTERPRISES) ============================ -->
+<section class="section-pad trustby" id="trustby">
+  <div class="wrap">
+    <div class="section-head centered reveal">
+      <span class="eyebrow centered" data-en="Trusted By" data-zh="服务客户">Trusted By</span>
+      <h2 class="section-title" data-en="Trusted by Global Industry Leaders" data-zh="服务全球行业领军企业">Trusted by Global Industry Leaders</h2>
+      <p class="section-sub" style="margin-inline:auto" data-en="From Fortune 500 groups to category leaders, enterprises across 30 industries rely on GEN-supported carbon and compliance work." data-zh="从世界 500 强集团到细分行业领军者，覆盖 30 个行业的企业信赖 GEN 支持的碳与合规工作。">From Fortune 500 groups to category leaders, enterprises across 30 industries rely on GEN-supported carbon and compliance work.</p>
+      <div class="tb-scale">
+        <div class="ts"><b>100+</b><span data-en="Fortune 500 & listed clients" data-zh="财富 500 强与上市客户">Fortune 500 &amp; listed clients</span></div>
+        <div class="ts"><b>30</b><span data-en="Industries covered" data-zh="覆盖行业">Industries covered</span></div>
+        <div class="ts"><b>1000s</b><span data-en="Supply-chain enterprises" data-zh="供应链企业">Supply-chain enterprises</span></div>
+      </div>
+    </div>
+    <div class="adv-marquee reveal" id="tbMarquee">
+      <div class="adv-track" id="tbTrack"></div>
+    </div>
+    <div class="adv-controls">
+      <button class="adv-arrow" id="tbPrev" aria-label="Previous"><svg class="ico" viewBox="0 0 24 24" style="width:20px;height:20px"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <button class="adv-arrow" id="tbNext" aria-label="Next"><svg class="ico" viewBox="0 0 24 24" style="width:20px;height:20px"><path d="M9 6l6 6-6 6"/></svg></button>
+    </div>
+    <p class="tb-note" data-en="Representative clients served through GEN-supported carbon &amp; compliance programs — hover a card to see the engagement." data-zh="部分通过 GEN 碳与合规服务支持的代表性客户——鼠标悬停查看合作场景。">Representative clients served through GEN-supported carbon &amp; compliance programs — hover a card to see the engagement.</p>
+  </div>
+</section>
+
+<!-- ============================ CORE SERVICES (TABS) ============================ -->
+<section class="section-pad" id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-en="Core Services" data-zh="核心服务">Core Services</span>
+      <h2 class="section-title" data-en="Five Carbon & Compliance Services" data-zh="五大碳与合规服务">Five Carbon &amp; Compliance Services</h2>
+      <p class="section-sub" data-en="Data-connected, one-stop services — combine them and save." data-zh="数据互通的一站式服务，组合采用更省成本。">Data-connected, one-stop services — combine them and save.</p>
+    </div>
+
+    <div class="tabs-head reveal">
+      <button class="tab-pill active" data-tab="t1"><span class="tn">01</span><span data-en="Product Carbon Footprint" data-zh="产品碳足迹核算">Product Carbon Footprint</span></button>
+      <button class="tab-pill" data-tab="t2"><span class="tn">02</span><span data-en="GHG Inventory" data-zh="组织温室气体盘查">GHG Inventory</span></button>
+      <button class="tab-pill" data-tab="t3"><span class="tn">03</span><span data-en="CBAM Reporting" data-zh="CBAM 申报">CBAM Reporting</span></button>
+      <button class="tab-pill" data-tab="t4"><span class="tn">04</span><span data-en="ESG Reporting" data-zh="ESG 报告撰写">ESG Reporting</span></button>
+      <button class="tab-pill" data-tab="t5"><span class="tn">05</span><span data-en="Green Power & RECs" data-zh="绿电绿证采购">Green Power &amp; RECs</span></button>
+    </div>
+
+    <!-- Panel 1 -->
+    <div class="tab-panel" data-panel="t1">
+      <div class="tab-body">
+        <span class="eyebrow" data-en="Standard · ISO 14067" data-zh="对标 · ISO 14067">Standard · ISO 14067</span>
+        <h3 data-en="Product Carbon Footprint" data-zh="产品碳足迹核算">Product Carbon Footprint</h3>
+        <p class="lead" data-en="Measure a product's total emissions from raw materials to end-of-life, with a formal report and optional carbon label." data-zh="算清一件产品从原料、生产、运输到报废共排放多少碳，出具正式报告，并可制作碳标签。">Measure a product's total emissions from raw materials to end-of-life, with a formal report and optional carbon label.</p>
+        <ul class="tab-points">
+          <li><span class="chk"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M20 6 9 17l-5-5"/></svg></span><span data-en="Photo-based instant footprint estimate (free)" data-zh="拍照／上传图片，快速估算产品碳足迹（免费）">Photo-based instant footprint estimate (free)</span></li>
+          <li><span class="chk"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M20 6 9 17l-5-5"/></svg></span><span data-en="Formal report benchmarked to ISO 14067 with reduction advice" data-zh="出具对标 ISO 14067 的正式报告并附减排建议">Formal report benchmarked to ISO 14067 with reduction advice</span></li>
+          <li><span class="chk"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M20 6 9 17l-5-5"/></svg></span><span data-en="Third-party verification support & carbon labels" data-zh="对接第三方核查、协助碳标签制作">Third-party verification support &amp; carbon labels</span></li>
+        </ul>
+        <a href="service-pcf.html" class="btn btn-primary btn-sm" data-en="View details" data-zh="查看详情">View details <svg class="ico arr" viewBox="0 0 24 24" style="width:16px;height:16px"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="svc-mock">
+        <div class="svc-mock-dots"><i></i><i></i><i></i></div>
+        <div class="dgm">
+          <div class="pcf-ring"></div>
+          <div class="pcf-center"><b data-en="Product Carbon Footprint" data-zh="产品碳足迹">Product Carbon Footprint</b><span>ISO 14067 · LCA</span></div>
+          <div class="pcf-node" style="top:12%;left:50%"><span class="nn">06</span><span class="nl" data-en="End-of-life" data-zh="废弃处理回收">End-of-life</span><span class="ni"><svg class="ico" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 9-9 9 9 0 0 1 6.7 3M21 12a9 9 0 0 1-9 9 9 9 0 0 1-6.7-3"/><path d="M18 3v4h-4M6 21v-4h4"/></svg></span></div>
+          <div class="pcf-node" style="top:31%;left:83%"><span class="nn">01</span><span class="nl" data-en="Raw materials" data-zh="原材料获取">Raw materials</span><span class="ni"><svg class="ico" viewBox="0 0 24 24"><circle cx="9" cy="20" r="1"/><circle cx="17" cy="20" r="1"/><path d="M2 3h3l2.4 12.4a1 1 0 0 0 1 .8h8.2a1 1 0 0 0 1-.8L20 7H6"/></svg></span></div>
+          <div class="pcf-node" style="top:69%;left:83%"><span class="nn">02</span><span class="nl" data-en="Inbound logistics" data-zh="原材料运输">Inbound logistics</span><span class="ni"><svg class="ico" viewBox="0 0 24 24"><path d="M3 16V6h11v10M14 9h4l3 3v4h-3"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg></span></div>
+          <div class="pcf-node" style="top:88%;left:50%"><span class="nn">03</span><span class="nl" data-en="Manufacturing" data-zh="生产制造">Manufacturing</span><span class="ni"><svg class="ico" viewBox="0 0 24 24"><path d="M3 21V11l5 3V11l5 3V8l5 3v10z"/><path d="M3 21h18"/></svg></span></div>
+          <div class="pcf-node" style="top:69%;left:17%"><span class="nn">04</span><span class="nl" data-en="Distribution" data-zh="运输和分销">Distribution</span><span class="ni"><svg class="ico" viewBox="0 0 24 24"><circle cx="6" cy="12" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="18" cy="18" r="2"/><path d="M8 11l8-4M8 13l8 4"/></svg></span></div>
+          <div class="pcf-node" style="top:31%;left:17%"><span class="nn">05</span><span class="nl" data-en="Product use" data-zh="产品使用">Product use</span><span class="ni"><svg class="ico" viewBox="0 0 24 24"><path d="M9 11V6a2 2 0 0 1 4 0v5M13 10V8a2 2 0 0 1 4 0v6a6 6 0 0 1-6 6h-1a6 6 0 0 1-4.2-1.7L3 16"/></svg></span></div>
+        </div>
+        <div class="svc-mock-num">01</div>
+      </div>
+    </div>
+
+    <!-- Panel 2 -->
+    <div class="tab-panel" data-panel="t2" hidden>
+      <div class="tab-body">
+        <span class="eyebrow" data-en="Standard · ISO 14064" data-zh="对标 · ISO 14064">Standard · ISO 14064</span>
+        <h3 data-en="Organizational GHG Inventory" data-zh="组织温室气体盘查">Organizational GHG Inventory</h3>
+        <p class="lead" data-en="Measure your whole company's annual emissions and hot-spots — a carbon check-up and the data foundation for ESG, CBAM and green power." data-zh="算清整个公司一年排放多少碳、主要排在哪——给企业做一次“碳体检”，也是 ESG、CBAM、绿电的基础数据。">Measure your whole company's annual emissions and hot-spots — a carbon check-up and the data foundation for ESG, CBAM and green power.</p>
+        <ul class="tab-points">
+          <li><span class="chk"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M20 6 9 17l-5-5"/></svg></span><span data-en="Instant annual emissions estimate with breakdown chart (free)" data-zh="在线快速估算全年碳排放 + 占比图（免费）">Instant annual emissions estimate with breakdown chart (free)</span></li>
+          <li><span class="chk"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M20 6 9 17l-5-5"/></svg></span><span data-en="Formal inventory report identifying key emission points" data-zh="出具正式碳盘查报告，找出主要排放点">Formal inventory report identifying key emission points</span></li>
+          <li><span class="chk"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M20 6 9 17l-5-5"/></svg></span><span data-en="Reusable data for ESG, CBAM & green power — no double cost" data-zh="数据可复用于 ESG、CBAM、绿电，不必重复花钱">Reusable data for ESG, CBAM &amp; green power — no double cost</span></li>
+        </ul>
+        <a href="service-ghg.html" class="btn btn-primary btn-sm" data-en="View details" data-zh="查看详情">View details <svg class="ico arr" viewBox="0 0 24 24" style="width:16px;height:16px"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="svc-mock">
+        <div class="svc-mock-dots"><i></i><i></i><i></i></div>
+        <div class="dgm"><div class="ghg">
+          <svg viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="84" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="7"/>
+            <circle cx="100" cy="100" r="68" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="7"/>
+            <circle cx="100" cy="100" r="52" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="7"/>
+            <circle cx="100" cy="100" r="84" fill="none" stroke="var(--c-accent)" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="26 100" opacity=".45"/>
+            <circle cx="100" cy="100" r="68" fill="none" stroke="var(--c-accent)" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="58 100" opacity=".8"/>
+            <circle cx="100" cy="100" r="52" fill="none" stroke="#2BD49B" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="42 100"/>
+          </svg>
+          <div class="ghg-center"><div class="lab" data-en="Total emissions" data-zh="总排放量">Total emissions</div><div class="big">42.8K</div><div class="unit">tCO₂e / y</div></div>
+          <div class="ghg-tip t1"><div class="t" data-en="Scope 2" data-zh="范围二">Scope 2</div><div class="v">30.4%</div></div>
+          <div class="ghg-tip t2"><div class="t" data-en="Scope 3" data-zh="范围三">Scope 3</div><div class="v">70.2%</div></div>
+        </div></div>
+        <div class="svc-mock-num">02</div>
+      </div>
+    </div>
+
+    <!-- Panel 3 -->
+    <div class="tab-panel" data-panel="t3" hidden>
+      <div class="tab-body">
+        <span class="eyebrow" data-en="Standard · EU CBAM" data-zh="对标 · EU CBAM">Standard · EU CBAM</span>
+        <h3 data-en="CBAM Reporting" data-zh="CBAM 申报">CBAM Reporting</h3>
+        <p class="lead" data-en="Selling carbon-intensive goods to the EU means a carbon border tax. We handle quarterly CBAM reporting end-to-end so shipments aren't held up." data-zh="卖到欧盟的高碳产品要交“碳关税”，须按季上报，否则可能卡关、罚款。GEN 帮您从头到尾办好。">Selling carbon-intensive goods to the EU means a carbon border tax. We handle quarterly CBAM reporting end-to-end so shipments aren't held up.</p>
+        <ul class="tab-points">
+          <li><span class="chk"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M20 6 9 17l-5-5"/></svg></span><span data-en="Online CBAM cost calculator by CN code (free)" data-zh="输入海关编码在线估算 CBAM 碳成本（免费）">Online CBAM cost calculator by CN code (free)</span></li>
+          <li><span class="chk"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M20 6 9 17l-5-5"/></svg></span><span data-en="Full 4-quarter data collection & filing on your behalf" data-zh="一年 4 个季度数据收集与代申报">Full 4-quarter data collection &amp; filing on your behalf</span></li>
+          <li><span class="chk"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M20 6 9 17l-5-5"/></svg></span><span data-en="Monitoring plans + EU regulation change alerts" data-zh="编制监测计划 + 欧盟法规变化提醒">Monitoring plans + EU regulation change alerts</span></li>
+        </ul>
+        <a href="service-cbam.html" class="btn btn-primary btn-sm" data-en="View details" data-zh="查看详情">View details <svg class="ico arr" viewBox="0 0 24 24" style="width:16px;height:16px"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="svc-mock">
+        <div class="svc-mock-dots"><i></i><i></i><i></i></div>
+        <div class="dgm cbam">
+          <svg class="orbit" viewBox="0 0 120 100" preserveAspectRatio="none"><ellipse cx="60" cy="50" rx="52" ry="38" fill="none" stroke="rgba(255,255,255,.16)" stroke-width=".5" stroke-dasharray="2.5 2.5"/></svg>
+          <span class="cbam-arrow" style="top:12%;left:50%;transform:translate(-50%,-50%) rotate(0deg)"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px;color:var(--c-accent)"><path d="M9 6l6 6-6 6"/></svg></span>
+          <span class="cbam-arrow" style="top:50%;left:93%;transform:translate(-50%,-50%) rotate(90deg)"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px;color:var(--c-accent)"><path d="M9 6l6 6-6 6"/></svg></span>
+          <span class="cbam-arrow" style="top:88%;left:50%;transform:translate(-50%,-50%) rotate(180deg)"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px;color:var(--c-accent)"><path d="M9 6l6 6-6 6"/></svg></span>
+          <span class="cbam-arrow" style="top:50%;left:7%;transform:translate(-50%,-50%) rotate(270deg)"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px;color:var(--c-accent)"><path d="M9 6l6 6-6 6"/></svg></span>
+          <div class="cbam-center"><b>CBAM</b><span data-en="Covered sectors" data-zh="覆盖行业">Covered sectors</span></div>
+          <div class="cbam-node" style="top:50%;left:6%" data-en="Fertilizers" data-zh="化肥">化肥</div>
+          <div class="cbam-node" style="top:18%;left:28%" data-en="Aluminium" data-zh="铝">铝</div>
+          <div class="cbam-node" style="top:18%;left:72%" data-en="Electricity" data-zh="电力">电力</div>
+          <div class="cbam-node" style="top:50%;left:94%" data-en="Cement" data-zh="水泥">水泥</div>
+          <div class="cbam-node" style="top:82%;left:72%" data-en="Steel" data-zh="钢铁">钢铁</div>
+          <div class="cbam-node" style="top:82%;left:28%"><span data-en="Hydrogen" data-zh="化工">化工</span><small data-en="H₂" data-zh="氢">H₂</small></div>
+          <div class="cbam-foot">
+            <span><svg class="ico" viewBox="0 0 24 24"><path d="M6 16a4 4 0 1 1 1-7.9A5 5 0 0 1 20 10a3.5 3.5 0 0 1-.5 6.9H6z"/></svg><span data-en="Supplier data collaboration" data-zh="供应商数据在线协同">Supplier data collaboration</span></span>
+            <span><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8.5 12l2.5 2.5 4.5-4.5"/></svg><span data-en="Auto-generated filings" data-zh="自动生成申报文件">Auto-generated filings</span></span>
+          </div>
+        </div>
+        <div class="svc-mock-num">04</div>
+      </div>
+    </div>
+
+    <!-- Panel 4 -->
+    <div class="tab-panel" data-panel="t4" hidden>
+      <div class="tab-body">
+        <span class="eyebrow" data-en="Standard · GRI / ISSB" data-zh="对标 · GRI / ISSB">Standard · GRI / ISSB</span>
+        <h3 data-en="ESG Reporting" data-zh="ESG 报告撰写">ESG Reporting</h3>
+        <p class="lead" data-en="We write your public sustainability (ESG) report covering environment, social and governance — ready for listing, tenders, clients and investors." data-zh="帮企业撰写对外公开的可持续发展（ESG）报告，把环境、社会与治理讲清楚，满足上市、投标、客户与投资人要求。">We write your public sustainability (ESG) report covering environment, social and governance — ready for listing, tenders, clients and investors.</p>
+        <ul class="tab-points">
+          <li><span class="chk"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M20 6 9 17l-5-5"/></svg></span><span data-en="ESG self-assessment with E/S/G radar & gap hints (free)" data-zh="ESG 披露自测打分 + E/S/G 雷达图（免费）">ESG self-assessment with E/S/G radar &amp; gap hints (free)</span></li>
+          <li><span class="chk"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M20 6 9 17l-5-5"/></svg></span><span data-en="Full report writing & layout to a mainstream standard" data-zh="按主流披露标准撰写报告并排版">Full report writing &amp; layout to a mainstream standard</span></li>
+          <li><span class="chk"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M20 6 9 17l-5-5"/></svg></span><span data-en="Rating questionnaire support (MSCI, CDP, etc.)" data-zh="协助应对 MSCI、CDP 等评级问卷">Rating questionnaire support (MSCI, CDP, etc.)</span></li>
+        </ul>
+        <a href="service-esg.html" class="btn btn-primary btn-sm" data-en="View details" data-zh="查看详情">View details <svg class="ico arr" viewBox="0 0 24 24" style="width:16px;height:16px"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="svc-mock">
+        <div class="svc-mock-dots"><i></i><i></i><i></i></div>
+        <div class="dgm"><div class="esg">
+          <svg viewBox="0 0 400 400">
+            <g fill="none" stroke="rgba(255,255,255,.13)" stroke-width="1">
+              <polygon points="200,162.5 235.7,188.4 222.1,230.3 177.9,230.3 164.3,188.4"/>
+              <polygon points="200,125 271.3,176.8 244.1,260.7 155.9,260.7 128.7,176.8"/>
+              <polygon points="200,87.5 307,165.2 266.1,291.1 133.9,291.1 93,165.2"/>
+              <polygon points="200,50 342.7,153.6 288.2,321.4 111.8,321.4 57.3,153.6"/>
+              <line x1="200" y1="200" x2="200" y2="50"/><line x1="200" y1="200" x2="342.7" y2="153.6"/><line x1="200" y1="200" x2="288.2" y2="321.4"/><line x1="200" y1="200" x2="111.8" y2="321.4"/><line x1="200" y1="200" x2="57.3" y2="153.6"/>
+            </g>
+            <polygon points="200,72.5 314.1,162.9 244.1,260.7 142.7,278.9 97.3,166.6" fill="rgba(43,212,155,.18)" stroke="#2BD49B" stroke-width="2.5" stroke-linejoin="round"/>
+            <g fill="#2BD49B"><circle cx="200" cy="72.5" r="4.5"/><circle cx="314.1" cy="162.9" r="4.5"/><circle cx="244.1" cy="260.7" r="4.5"/><circle cx="142.7" cy="278.9" r="4.5"/><circle cx="97.3" cy="166.6" r="4.5"/></g>
+          </svg>
+          <div class="esg-lab" style="top:2%;left:50%" data-en="Environment" data-zh="环境">Environment</div>
+          <div class="esg-lab" style="top:36%;left:91%" data-en="Social" data-zh="社会">Social</div>
+          <div class="esg-lab" style="top:90%;left:74%" data-en="Governance" data-zh="治理">Governance</div>
+          <div class="esg-lab" style="top:90%;left:26%" data-en="Transparency" data-zh="透明度">Transparency</div>
+          <div class="esg-lab" style="top:36%;left:9%" data-en="Management" data-zh="管理">Management</div>
+          <div class="esg-score"><div class="lab" data-en="Overall" data-zh="综合评分">Overall</div><div class="v">84.5</div></div>
+        </div></div>
+        <div class="svc-mock-num">07</div>
+      </div>
+    </div>
+
+    <!-- Panel 5 -->
+    <div class="tab-panel" data-panel="t5" hidden>
+      <div class="tab-body">
+        <span class="eyebrow" data-en="Standard · RE100 / GEC" data-zh="对标 · RE100 / 绿证">Standard · RE100 / GEC</span>
+        <h3 data-en="Green Power & RECs" data-zh="绿电绿证采购">Green Power &amp; RECs</h3>
+        <p class="lead" data-en="We help you buy green power or RECs to cut emissions, meet client requirements, or offset CBAM costs." data-zh="帮企业买到绿色电力或绿证，用于降碳、满足客户绿电要求或抵扣 CBAM 碳关税成本。">We help you buy green power or RECs to cut emissions, meet client requirements, or offset CBAM costs.</p>
+        <ul class="tab-points">
+          <li><span class="chk"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M20 6 9 17l-5-5"/></svg></span><span data-en="Calculate how much green power / RECs you need" data-zh="测算企业需要多少绿电／绿证">Calculate how much green power / RECs you need</span></li>
+          <li><span class="chk"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M20 6 9 17l-5-5"/></svg></span><span data-en="Procure RECs & organize purchase records" data-zh="帮助采购绿证、整理采购凭证">Procure RECs &amp; organize purchase records</span></li>
+          <li><span class="chk"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M20 6 9 17l-5-5"/></svg></span><span data-en="Combine with CBAM for the most cost-effective plan" data-zh="结合 CBAM 给出最划算的采购方案">Combine with CBAM for the most cost-effective plan</span></li>
+        </ul>
+        <a href="service-green-power.html" class="btn btn-primary btn-sm" data-en="View details" data-zh="查看详情">View details <svg class="ico arr" viewBox="0 0 24 24" style="width:16px;height:16px"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="svc-mock">
+        <div class="svc-mock-dots"><i></i><i></i><i></i></div>
+        <div class="dgm gpw">
+          <svg viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="76" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="10"/>
+            <circle cx="100" cy="100" r="76" fill="none" stroke="rgba(43,212,155,.25)" stroke-width="10" stroke-linecap="round" pathLength="100" stroke-dasharray="100 100"/>
+            <circle cx="100" cy="100" r="76" fill="none" stroke="#2BD49B" stroke-width="10" stroke-linecap="round" pathLength="100" stroke-dasharray="92 100"/>
+          </svg>
+          <div class="gpw-center"><div class="lab" data-en="Renewable coverage" data-zh="绿电覆盖率">Renewable coverage</div><div class="big">100%</div><div class="unit" data-en="RE100 ready" data-zh="满足 RE100">RE100 ready</div></div>
+          <span class="gpw-node n1">I-REC</span>
+          <span class="gpw-node n2">GEC</span>
+          <span class="gpw-node n3">VPPA</span>
+          <div class="gpw-foot">
+            <span><svg class="ico" viewBox="0 0 24 24"><path d="M9 11l3 3 8-8"/><path d="M21 12a9 9 0 1 1-6.2-8.5"/></svg><span data-en="Traceable & unique" data-zh="可溯源 · 权益唯一">Traceable &amp; unique</span></span>
+            <span><svg class="ico" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg><span data-en="Third-party verifiable" data-zh="第三方可鉴证">Third-party verifiable</span></span>
+          </div>
+        </div>
+        <div class="svc-mock-num">05</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 3C FRAMEWORK ============================ -->
+<section class="section-pad dark" id="framework">
+  <div class="wrap">
+    <div class="section-head centered reveal">
+      <span class="eyebrow centered" data-en="3C Framework" data-zh="3C 战略框架">3C Framework</span>
+      <h2 class="section-title" data-en="Certify — Comply — Compete" data-zh="认证 — 合规 — 竞争">Certify — Comply — Compete</h2>
+      <p class="section-sub" data-en="One integrated framework across your entire global journey." data-zh="一套一体化框架，覆盖出海全流程。">One integrated framework across your entire global journey.</p>
+    </div>
+    <div class="c3-grid">
+      <div class="c3-card reveal">
+        <div class="c3-num" style="border-style: none">01</div>
+        <div class="c3-ico"><svg class="ico ico-lg" viewBox="0 0 24 24"><path d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/><path d="M8.5 13.5L7 22l5-3 5 3-1.5-8.5"/></svg></div>
+        <div class="c3-en">Certify</div>
+        <h3 data-en="Certify" data-zh="认证">Certify</h3>
+        <p data-en="UNGC-aligned ESG training & international certification — your passport to market access and trust." data-zh="基于 UNGC 十项原则的 ESG 培训与国际认证，赢得海外市场准入与信任。">UNGC-aligned ESG training &amp; international certification — your passport to market access and trust.</p>
+        <div class="c3-tags">
+          <span class="chip" data-en="UNGC 10 Principles" data-zh="UNGC 十项原则">UNGC 10 Principles</span>
+          <span class="chip" data-en="ESG Training" data-zh="ESG 培训">ESG Training</span>
+        </div>
+      </div>
+      <div class="c3-card reveal d1">
+        <div class="c3-num">02</div>
+        <div class="c3-ico"><svg class="ico ico-lg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <div class="c3-en">Comply</div>
+        <h3 data-en="Comply" data-zh="合规">Comply</h3>
+        <p data-en="Domestic ODI filing & tax incentives, plus on-the-ground overseas legal and regulatory compliance." data-zh="境内 ODI 备案、税收激励，海外法律与监管遵循，出海全程合法稳健。">Domestic ODI filing &amp; tax incentives, plus on-the-ground overseas legal and regulatory compliance.</p>
+        <div class="c3-tags">
+          <span class="chip" data-en="ODI Filing" data-zh="ODI 备案">ODI Filing</span>
+          <span class="chip" data-en="Tax Incentives" data-zh="税收激励">Tax Incentives</span>
+        </div>
+      </div>
+      <div class="c3-card reveal d2">
+        <div class="c3-num">03</div>
+        <div class="c3-ico"><svg class="ico ico-lg" viewBox="0 0 24 24"><path d="M3 21V10l6-4 6 4v11"/><path d="M3 21h18M15 21v-7l6-3v10M8 14h2M8 18h2"/></svg></div>
+        <div class="c3-en">Compete</div>
+        <h3 data-en="Compete" data-zh="竞争">Compete</h3>
+        <p data-en="Global resource network, flexible workforce & capability building to win in core markets." data-zh="全球资源网络、弹性人力与能力建设，链接核心市场实现品牌跃升。">Global resource network, flexible workforce &amp; capability building to win in core markets.</p>
+        <div class="c3-tags">
+          <span class="chip" data-en="Resource Network" data-zh="资源网络">Resource Network</span>
+          <span class="chip" data-en="Capability Building" data-zh="能力建设">Capability Building</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ HOW WE HELP ============================ -->
+<section class="section-pad dark">
+  <div class="wrap">
+    <div class="section-head centered reveal">
+      <span class="eyebrow centered" data-en="Process" data-zh="服务流程">Process</span>
+      <h2 class="section-title" data-en="How We Help You" data-zh="我们如何帮助您">How We Help You</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-dot">01</div>
+        <h4 data-en="Discovery" data-zh="需求识别">Discovery</h4>
+        <p data-en="Understand your goals & compliance gaps" data-zh="了解出海目标与合规缺口">Understand your goals &amp; compliance gaps</p>
+      </div>
+      <div class="step reveal d1">
+        <div class="step-dot">02</div>
+        <h4 data-en="Solution Matching" data-zh="方案匹配">Solution Matching</h4>
+        <p data-en="Match the right services to your needs" data-zh="为需求匹配合适的服务组合">Match the right services to your needs</p>
+      </div>
+      <div class="step reveal d2">
+        <div class="step-dot">03</div>
+        <h4 data-en="Kick-off" data-zh="确认启动">Kick-off</h4>
+        <p data-en="Confirm scope, timeline and start" data-zh="确认范围与时间表，正式启动">Confirm scope, timeline and start</p>
+      </div>
+      <div class="step reveal d3">
+        <div class="step-dot">04</div>
+        <h4 data-en="Execution" data-zh="项目执行">Execution</h4>
+        <p data-en="Deliver work with progress on the platform" data-zh="平台跟踪进度，推进项目交付">Deliver work with progress on the platform</p>
+      </div>
+      <div class="step reveal d4">
+        <div class="step-dot">05</div>
+        <h4 data-en="Delivery" data-zh="完成交付">Delivery</h4>
+        <p data-en="Final reports, certificates and next steps" data-zh="交付报告与证书，规划下一步">Final reports, certificates and next steps</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ADVISORY BOARD ============================ -->
+<section class="section-pad" id="advisory" style="background:var(--c-bg-alt)">
+  <div class="wrap">
+    <div class="section-head centered reveal">
+      <span class="eyebrow centered" data-en="Global Advisory Board" data-zh="全球顾问委员会">Global Advisory Board</span>
+      <h2 class="section-title" data-en="19 Global Leaders Across 5 Continents" data-zh="19 位全球领袖，覆盖五大洲">19 Global Leaders Across 5 Continents</h2>
+      <p class="section-sub" data-en="A network combining global vision with deep local insight." data-zh="兼具全球视野与本土洞察的专家网络。">A network combining global vision with deep local insight.</p>
+    </div>
+    <div class="adv-marquee" id="advMarquee">
+      <div class="adv-track" id="advTrack"></div>
+    </div>
+    <div class="adv-controls">
+      <button class="adv-arrow" id="advPrev" aria-label="Previous"><svg class="ico" viewBox="0 0 24 24" style="width:20px;height:20px"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <button class="adv-arrow" id="advNext" aria-label="Next"><svg class="ico" viewBox="0 0 24 24" style="width:20px;height:20px"><path d="M9 6l6 6-6 6"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ WHY GEN ============================ -->
+<section class="section-pad" id="about" style="background:var(--c-bg-alt); padding-top: clamp(36px, 4vw, 60px)">
+  <div class="wrap why-grid">
+    <div>
+      <div class="section-head reveal" style="margin-bottom:36px">
+        <span class="eyebrow" data-en="Why GEN" data-zh="为什么选择 GEN">Why GEN</span>
+        <h2 class="section-title" data-en="One Partner for Your Entire Global Journey" data-zh="出海全程，一个伙伴">One Partner for Your Entire Global Journey</h2>
+      </div>
+      <div class="accordion reveal">
+        <div class="acc-item" data-acc>
+          <button class="acc-head">
+            <span class="acc-ico"><svg class="ico" viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01"/></svg></span>
+            <h4 data-en="Government-backed partnership & policy resources" data-zh="官方战略合作伙伴与政策资源整合">Government-backed partnership &amp; policy resources</h4>
+            <span class="acc-plus"></span>
+          </button>
+          <div class="acc-body"><div class="acc-body-inner" data-en="Official strategic partner of Pudong's overseas-expansion service center, integrating MOFCOM and NDRC policy resources." data-zh="浦东新区“企业走出去”综合服务中心官方战略合作伙伴，整合商务部 / 发改委政策资源。">Official strategic partner of Pudong's overseas-expansion service center, integrating MOFCOM and NDRC policy resources.</div></div>
+        </div>
+        <div class="acc-item" data-acc>
+          <button class="acc-head">
+            <span class="acc-ico"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3a14 14 0 0 0 0 18M12 3a14 14 0 0 1 0 18M3.5 9h17M3.5 15h17"/></svg></span>
+            <h4 data-en="Global vision & UNGC-aligned ESG compliance" data-zh="全球视野 + 国际高标准 ESG 合规">Global vision &amp; UNGC-aligned ESG compliance</h4>
+            <span class="acc-plus"></span>
+          </button>
+          <div class="acc-body"><div class="acc-body-inner" data-en="In strategic collaboration with the UN Global Compact (UNGC), we deliver ESG training and certification to international standards." data-zh="与联合国全球契约组织（UNGC）战略合作，提供国际高标准的 ESG 培训与认证。">In strategic collaboration with the UN Global Compact (UNGC), we deliver ESG training and certification to international standards.</div></div>
+        </div>
+        <div class="acc-item" data-acc>
+          <button class="acc-head">
+            <span class="acc-ico"><svg class="ico" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+            <h4 data-en="Global vision + local insight: a network of experts" data-zh="全球视野 + 本土洞察的专家网络">Global vision + local insight: a network of experts</h4>
+            <span class="acc-plus"></span>
+          </button>
+          <div class="acc-body"><div class="acc-body-inner" data-en="Our 19-member advisory board spans five continents, pairing global perspective with on-the-ground local knowledge." data-zh="19 位顾问委员覆盖五大洲，将全球视角与本地洞察相结合。">Our 19-member advisory board spans five continents, pairing global perspective with on-the-ground local knowledge.</div></div>
+        </div>
+        <div class="acc-item" data-acc>
+          <button class="acc-head">
+            <span class="acc-ico"><svg class="ico" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96 12 12l8.73-5.04M12 22V12"/></svg></span>
+            <h4 data-en="Data-connected one-stop services that save cost" data-zh="数据互通的一站式服务，组合更省成本">Data-connected one-stop services that save cost</h4>
+            <span class="acc-plus"></span>
+          </button>
+          <div class="acc-body"><div class="acc-body-inner" data-en="Our five services share one data foundation — combine them to avoid repeated accounting and reduce total cost." data-zh="五项服务共用一套数据基础——组合采用可减少重复核算、降低整体成本。">Our five services share one data foundation — combine them to avoid repeated accounting and reduce total cost.</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="why-visual reveal d1">
+      <div class="wv-inner">
+        <h4 data-en="Built on real carbon data — not empty words" data-zh="以真实碳数据为底——不说空话">Built on real carbon data — not empty words</h4>
+        <div class="wv-stats">
+          <div class="wv-stat"><div class="n">ISO</div><div class="l" data-en="14067 / 14064 aligned" data-zh="对标 14067 / 14064">14067 / 14064 aligned</div></div>
+          <div class="wv-stat"><div class="n">UNGC</div><div class="l" data-en="Strategic collaboration" data-zh="战略合作">Strategic collaboration</div></div>
+        </div>
+        <div class="wv-divider"></div>
+        <div class="wv-stats">
+          <div class="wv-stat"><div class="n">5</div><div class="l" data-en="Service areas, one data layer" data-zh="五项服务，一套数据">Service areas, one data layer</div></div>
+          <div class="wv-stat"><div class="n">5min</div><div class="l" data-en="Tailored plan turnaround" data-zh="专属方案周期">Tailored plan turnaround</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ TRUSTED NETWORK ============================ -->
+<section class="section-pad">
+  <div class="wrap trust-wrap">
+    <div class="section-head centered reveal" style="margin-bottom:8px">
+      <span class="eyebrow centered" data-en="Our Trusted Network" data-zh="权威合作网络">Our Trusted Network</span>
+      <h2 class="section-title" data-en="Backed by Institutions That Matter" data-zh="权威机构支撑">Backed by Institutions That Matter</h2>
+      <p class="section-sub" style="margin-inline:auto" data-en="Official strategic partner of Pudong's overseas-expansion service center, in strategic collaboration with the UN Global Compact." data-zh="浦东新区“企业走出去”综合服务中心官方战略合作伙伴，并与联合国全球契约组织（UNGC）战略合作。">Official strategic partner of Pudong's overseas-expansion service center, in strategic collaboration with the UN Global Compact.</p>
+    </div>
+    <div class="logo-wall reveal">
+      <div class="logo-cell"><span class="lc-name">UNGC</span><span class="lc-tag" data-en="UN Global Compact" data-zh="联合国全球契约">UN Global Compact</span></div>
+      <div class="logo-cell"><span class="lc-name" data-en="Pudong Center" data-zh="浦东综合服务中心">Pudong Center</span><span class="lc-tag" data-en="Go-Global Service" data-zh="企业走出去">Go-Global Service</span></div>
+      <div class="logo-cell"><span class="lc-name">MOFCOM</span><span class="lc-tag" data-en="Policy Resources" data-zh="政策资源">Policy Resources</span></div>
+      <div class="logo-cell"><span class="lc-name">NDRC</span><span class="lc-tag" data-en="Policy Resources" data-zh="政策资源">Policy Resources</span></div>
+    </div>
+    <p style="margin-top:20px;font-size:13px;color:var(--c-text-muted)" data-en="Partner logos shown as placeholders — only marks GEN is authorized to display will be used." data-zh="合作机构徽标为占位——仅采用 GEN 有权展示的标识。">Partner logos shown as placeholders — only marks GEN is authorized to display will be used.</p>
+  </div>
+</section>
+
+<!-- ============================ KEY NUMBERS ============================ -->
+<section class="section-pad dark" id="numbers">
+  <div class="wrap">
+    <div class="section-head centered reveal">
+      <span class="eyebrow centered" data-en="GEN at a Glance" data-zh="数据一览">GEN at a Glance</span>
+      <h2 class="section-title" data-en="A Network That Scales With You" data-zh="与您同行的全球网络">A Network That Scales With You</h2>
+    </div>
+    <div class="nums-grid">
+      <div class="num-cell reveal"><div class="num-big" data-count="19">19</div><div class="num-label" data-en="Global Advisors" data-zh="全球顾问">Global Advisors</div></div>
+      <div class="num-cell reveal d1"><div class="num-big" data-count="5">5</div><div class="num-label" data-en="Continents" data-zh="覆盖大洲">Continents</div></div>
+      <div class="num-cell reveal d2"><div class="num-big" data-count="10">10</div><div class="num-label" data-en="UNGC Principles" data-zh="UNGC 原则">UNGC Principles</div></div>
+      <div class="num-cell reveal d3"><div class="num-big">3C</div><div class="num-label" data-en="Integrated Framework" data-zh="一体化框架">Integrated Framework</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FINAL CTA ============================ -->
+<section class="final-cta" id="contact">
+  <div class="wrap">
+    <div class="final-cta-inner reveal">
+      <h2 data-en="Ready to start your global compliance journey?" data-zh="准备好开启您的全球化合规之旅了吗？">Ready to start your global compliance journey?</h2>
+      <p data-en="Tell us your needs — get a tailored plan within 5 minutes." data-zh="留下需求，5 分钟内获得专属出海方案。">Tell us your needs — get a tailored plan within 5 minutes.</p>
+      <div class="btn-row">
+        <a href="https://aiportaluat.bravowhale-uat.com/complianceRequirementAnalysis?inviteCode=CH_A124&amp;step=questionnaire" target="_blank" rel="noopener noreferrer" class="btn btn-white" data-en="Start from here" data-zh="从这里开始">Start from here <svg class="ico arr" viewBox="0 0 24 24" style="width:18px;height:18px"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="mailto:hello@cngen.org" class="btn btn-outline-d" data-en="Contact Us" data-zh="联系我们">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="#top">
+          <span class="brand-mark" role="img" aria-label="GEN"></span>
+          <span class="brand-text"><b>GEN</b><small>Global Economic Network</small></span>
+        </a>
+        <p class="footer-slogan" data-en="Connect Beyond Borders, Grow Beyond Limits" data-zh="联接无界 增长无限">Connect Beyond Borders, Grow Beyond Limits</p>
+        <p class="footer-about" data-en="A flagship initiative under the Shanghai Jien Public Welfare Development Promotion Center, providing one-stop internationalization services for enterprises going global." data-zh="上海杰恩公益发展促进中心旗下核心项目，为企业提供国际化一站式出海服务。">A flagship initiative under the Shanghai Jien Public Welfare Development Promotion Center, providing one-stop internationalization services for enterprises going global.</p>
+      </div>
+      <div class="footer-col">
+        <h5 data-en="Services" data-zh="服务">Services</h5>
+        <ul>
+          <li><a href="service-pcf.html" data-en="Product Carbon Footprint" data-zh="产品碳足迹核算">Product Carbon Footprint</a></li>
+          <li><a href="service-ghg.html" data-en="GHG Inventory" data-zh="组织温室气体盘查">GHG Inventory</a></li>
+          <li><a href="service-cbam.html" data-en="CBAM Reporting" data-zh="CBAM 申报">CBAM Reporting</a></li>
+          <li><a href="service-esg.html" data-en="ESG Reporting" data-zh="ESG 报告撰写">ESG Reporting</a></li>
+          <li><a href="service-green-power.html" data-en="Green Power & RECs" data-zh="绿电绿证采购">Green Power &amp; RECs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-en="About" data-zh="关于">About</h5>
+        <ul>
+          <li><a href="about.html" data-en="Our Mission" data-zh="我们的使命">Our Mission</a></li>
+          <li><a href="#framework" data-en="3C Framework" data-zh="3C 框架">3C Framework</a></li>
+          <li><a href="#advisory" data-en="Advisory Board" data-zh="顾问委员会">Advisory Board</a></li>
+          <li><a href="#contact" data-en="Contact" data-zh="联系我们">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-en="Contact" data-zh="联系">Contact</h5>
+        <div class="footer-contact-item"><svg class="ico" viewBox="0 0 24 24" style="width:17px;height:17px"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20"/></svg> www.cngen.org</div>
+        <div class="footer-contact-item"><svg class="ico" viewBox="0 0 24 24" style="width:17px;height:17px"><path d="M4 4h16v16H4z"/><path d="m4 6 8 6 8-6"/></svg> hello@cngen.org</div>
+        <div class="footer-qr">
+          <img src="assets/contact-qr.png" alt="WeChat QR code" width="116" height="116">
+          <span data-en="Add us on WeChat" data-zh="微信扫码联系我们">Add us on WeChat</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bot">
+      <span>© 2026 Global Economic Network. <span data-en="All rights reserved." data-zh="版权所有。">All rights reserved.</span></span>
+      <span data-en="One-stop: Compliant · Sustainable · Efficient" data-zh="一站式：合规 · 可持续 · 高效">One-stop: Compliant · Sustainable · Efficient</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ---- Advisory board data + render ---- */
+(function () {
+  var advisors = [
+    ["Linda Painan","许菱娜","Founder & Chairperson","Global Economic Network","SG · CN · SEA","新加坡·中国·东南亚"],
+    ["Pierre Cohade","柯华德","Director","Johnson Controls / CEAT","CN · EU · IN · ZA","中国·欧洲·印度·南非"],
+    ["Frances Chang","章嘉玉","Board Member","Noah Holdings","SG · CN","新加坡·中国"],
+    ["Vivien Chang","蒋颖","Chairman","Deloitte China","CN","中国"],
+    ["Himanshu Chaturvedi","贺满袖","Regional Head","Olam Agri","SG · CN","新加坡·中国"],
+    ["Carlo D'Andrea","代开乐","Founder","D'Andrea & Partners","CN · IT · EU","中国·意大利·欧洲"],
+    ["Curt Ferguson","冯广晟","Managing Partner","Ventech China","US · MN","美国·蒙古"],
+    ["Peter Foo","符懋赞","President & CEO","UOB China","SG · CN","新加坡·中国"],
+    ["Julian Kwek","郭俊耀","Director","Drew & Napier","ID · SG","印尼·新加坡"],
+    ["Bruno Lannes","布鲁诺·兰纳","Senior Partner","Bain & Company","UK · FR · CN","英·法·中"],
+    ["Qiang Li","李强","Corporate Lawyer","DLA Piper","US · CN","美国·中国"],
+    ["Manoj Mehta","马偌杰","CEO","Naked Group","ZA · IN · US","南非·印度·美国"],
+    ["Ng Yiping","黄榆镔","Co-founder & MP","Yunqi Capital","SG · CN","新加坡·中国"],
+    ["Marco Olszewsky","马世吉","President & CEO","RHI Magnesita","CN · EU · APAC","中国·欧盟·亚太"],
+    ["Ong Tze Guan","王子元","CEO","Glowtec & H2MO","SG · SEA","新加坡·东南亚"],
+    ["Rajnish Puri","普瑞","Founder & Chairman","RP Group","CN · IN · AE","中国·印度·迪拜"],
+    ["Raymond Ro","户镇铉","Associate Dean","NYU Shanghai","KR · US","韩国·美国"],
+    ["Dr Teh Kok Peng","郑国枰","Chair, EAI","NUS","SG · SEA","新加坡·东南亚"],
+    ["Dr Lola Woetzel","","Managing Partner","Global6","ME · US","中东·美国"]
+  ];
+  var palettes = [
+    "linear-gradient(135deg,#0E7A52,#2BD49B)","linear-gradient(135deg,#0EA5A4,#16A34A)",
+    "linear-gradient(135deg,#064E3B,#10B981)","linear-gradient(135deg,#16A34A,#0EA5A4)",
+    "linear-gradient(135deg,#10B981,#2BD49B)","linear-gradient(135deg,#0E7A52,#0EA5A4)"
+  ];
+  function initials(name){
+    var parts = name.replace(/^Dr\s+/,'').split(/\s+/);
+    if(parts.length===1) return parts[0].slice(0,2).toUpperCase();
+    return (parts[0][0]+parts[parts.length-1][0]).toUpperCase();
+  }
+  var track = document.getElementById('advTrack');
+  function makeCard(a, i){
+    var card = document.createElement('div');
+    card.className = 'adv-card';
+    card.innerHTML =
+      '<div class="adv-top">'+
+        '<div class="avatar" style="background:'+palettes[i%palettes.length]+'">'+initials(a[0])+'</div>'+
+        '<div>'+
+          '<div class="adv-name-en">'+a[0]+'</div>'+
+          (a[1]? '<div class="adv-name-zh">'+a[1]+'</div>':'')+
+        '</div>'+
+      '</div>'+
+      '<div class="adv-role" data-en="'+a[2]+'" data-zh="'+a[2]+'">'+a[2]+'</div>'+
+      '<div class="adv-org">'+a[3]+'</div>'+
+      '<span class="adv-region" data-en="'+a[4]+'" data-zh="'+a[5]+'">'+a[4]+'</span>';
+    return card;
+  }
+  // render twice for a seamless marquee loop
+  for (var pass=0; pass<2; pass++){
+    advisors.forEach(function(a, i){ track.appendChild(makeCard(a, i)); });
+  }
+})();
+</script>
+<script>
+/* ---- Trusted-by enterprises data + render ---- */
+(function () {
+  // [EN name, ZH name, mark, industry EN, industry ZH, badge EN, badge ZH, scenario EN, scenario ZH]
+  var firms = [
+    ["Siemens Energy","西门子能源","SE","Energy Technology","能源技术","Fortune 500","世界 500 强","One-stop ESG platform + VPPA green power across the supply chain.","一站式 ESG 平台 + VPPA 绿电（含供应链）。"],
+    ["Nestlé","雀巢","Ne","Food & Beverage","食品饮料","RE100","RE100","Traceable green power and supply-chain carbon management.","可溯源绿电 + 供应链碳管理。"],
+    ["AXA","安盛","AX","Insurance & Finance","保险 / 金融","Fortune 500","世界 500 强","100% green power procurement and carbon neutrality in China.","中国区 100% 绿电采购、全范围碳中和。"],
+    ["DELL","戴尔","De","Computer Hardware","计算机硬件","Fortune 500","财富 500 强","I-REC + VPPA + one-stop ESG platform.","I-REC + VPPA + 一站式 ESG 平台。"],
+    ["SK Group","SK 集团","SK","Power Battery","动力电池","Fortune 500","世界 500 强","Green carbon assets for the EU Battery Regulation.","绿色碳资产（应对欧盟《新电池法》）。"],
+    ["ByteDance","字节跳动","BD","Internet & Data Centers","互联网 / 数据中心","","","Largest single GEC green-certificate transaction in China.","国内最大单笔 GEC 绿证交易。"],
+    ["Caterpillar","卡特彼勒","Ca","Heavy Machinery","重工 / 工程机械","","","GEC green certificates across supply-chain green power.","供应链绿电 GEC 绿证审核。"],
+    ["Toyota","丰田","To","Automotive Parts","汽车零部件","Fortune 500","世界 500 强","International RECs for three consecutive years.","国际绿证 RECs（连续 3 年）。"],
+    ["Mercedes-Benz","奔驰","MB","Automotive Retail","汽车零售","","","I-REC international green certificates for dealerships.","4S 门店绿电 I-REC 国际绿证。"],
+    ["Luxshare","立讯精密","Lx","Electronics","电子制造","","","I-REC + GEC in response to Apple 2030.","I-REC + GEC（响应 Apple 2030）。"],
+    ["IFF","国际香精香料","IF","Flavors & Fragrances","香精香料","","","One-stop ESG platform + VPPA green power.","一站式 ESG 平台 + VPPA 绿电。"],
+    ["Nouryon","诺力昂","No","Specialty Chemicals","特种化学品","Fortune 500","世界 500 强","I-REC for 100% renewable electricity.","I-REC 国际绿证（100% 可再生电力）。"],
+    ["Prada","普拉达","Pr","Luxury & Fashion","奢侈品 / 时尚","","","Green power procurement supporting LEED certification.","绿电采购 → LEED 绿色建筑认证。"],
+    ["Bradken","布兰肯","Br","Mining Equipment","采矿设备制造","Fortune 500","世界 500 强","VPPA direct green-power purchase.","VPPA 绿电直购。"]
+  ];
+  var track = document.getElementById('tbTrack');
+  if (!track) return;
+  var LOGOS = {
+    'Siemens Energy':'Siemens_Energy_logo.svg.png',
+    'Nestlé':'Nestle.png',
+    'AXA':'AXA.png',
+    'DELL':'DELL.png',
+    'SK Group':'SKon.jpg',
+    'ByteDance':'ByteDance.png',
+    'Caterpillar':'CAT.jpeg',
+    'Toyota':'Toyota.jpeg',
+    'Mercedes-Benz':'MercedesBenz.png',
+    'Luxshare':'luxshare_ict_logo.jpeg',
+    'IFF':'IFF.png',
+    'Nouryon':'Nouryon.png',
+    'Prada':'prada_logo.jpeg',
+    'Bradken':'Bradken.png'
+  };
+  function makeFirm(f){
+    var en=f[0], zh=f[1], mark=f[2], indEN=f[3], indZH=f[4], bEN=f[5], bZH=f[6], sEN=f[7], sZH=f[8];
+    var card = document.createElement('div');
+    card.className = 'adv-card tb-card';
+    card.innerHTML =
+      '<div class="tb-head">'+
+        '<div class="tb-mark">'+(LOGOS[en] ? '<img src="assets/logos/'+LOGOS[en]+'" alt="'+en+'" loading="lazy">' : mark)+'</div>'+
+        '<div><div class="tb-name-en">'+en+'</div><div class="tb-name-zh">'+zh+'</div></div>'+
+      '</div>'+
+      '<div class="tb-foot">'+
+        '<span class="tb-ind" data-en="'+indEN+'" data-zh="'+indZH+'">'+indEN+'</span>'+
+        (bEN? '<span class="tb-badge" data-en="'+bEN+'" data-zh="'+bZH+'">'+bEN+'</span>' : '')+
+      '</div>'+
+      '<div class="tb-reveal">'+
+        '<span class="tr-ind" data-en="'+indEN+'" data-zh="'+indZH+'">'+indEN+'</span>'+
+        '<span class="tr-name">'+en+'</span>'+
+        '<span class="tr-scn" data-en="'+sEN+'" data-zh="'+sZH+'">'+sEN+'</span>'+
+      '</div>';
+    return card;
+  }
+  // render twice for a seamless marquee loop
+  for (var pass=0; pass<2; pass++){
+    firms.forEach(function (f) { track.appendChild(makeFirm(f)); });
+  }
+})();
+</script>
+<script>
+/* ---- Hero "Global Clients" network graph ---- */
+(function () {
+  var graph = document.getElementById('cliGraph');
+  var edges = document.getElementById('cliEdges');
+  if (!graph || !edges) return;
+  var SVGNS = 'http://www.w3.org/2000/svg';
+  var CLIENTS = [
+    ['Siemens Energy','Siemens_Energy_logo.svg.png'],
+    ['Nestlé','Nestle.png'],
+    ['AXA','AXA.png'],
+    ['DELL','DELL.png'],
+    ['SK on','SKon.jpg'],
+    ['ByteDance','ByteDance.png'],
+    ['Caterpillar','CAT.jpeg'],
+    ['Toyota Boshoku','Toyota.jpeg'],
+    ['Mercedes-Benz','MercedesBenz.png'],
+    ['Luxshare','luxshare_ict_logo.jpeg'],
+    ['IFF','IFF.png'],
+    ['Nouryon','Nouryon.png'],
+    ['Prada','prada_logo.jpeg'],
+    ['Bradken','Bradken.png']
+  ];
+  function ring(list, R, baseDelay) {
+    var n = list.length;
+    list.forEach(function (c, i) {
+      var ang = (-90 + i * 360 / n) * Math.PI / 180;
+      var x = 50 + R * Math.cos(ang), y = 50 + R * Math.sin(ang);
+      var node = document.createElement('span');
+      node.className = 'hsf-node';
+      node.title = c[0];
+      node.style.setProperty('--x', x.toFixed(2) + '%');
+      node.style.setProperty('--y', y.toFixed(2) + '%');
+      node.style.transitionDelay = (baseDelay + i * 0.05).toFixed(2) + 's';
+      node.innerHTML = '<img src="assets/logos/' + c[1] + '" alt="' + c[0] + '" loading="lazy">';
+      graph.appendChild(node);
+      var line = document.createElementNS(SVGNS, 'line');
+      line.setAttribute('x1', '50'); line.setAttribute('y1', '50');
+      line.setAttribute('x2', x.toFixed(2)); line.setAttribute('y2', y.toFixed(2));
+      line.setAttribute('vector-effect', 'non-scaling-stroke');
+      line.style.transitionDelay = (baseDelay + i * 0.05).toFixed(2) + 's';
+      edges.appendChild(line);
+    });
+  }
+  ring(CLIENTS.slice(0, 6), 22, 0.10);
+  ring(CLIENTS.slice(6, 14), 38, 0.18);
+})();
+</script>
+<script src="app.js?v=9"></script>
+</body>
+</html>
