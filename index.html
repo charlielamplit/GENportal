@@ -84,7 +84,7 @@
       <div class="hero-info">
         <span data-en="100+ Global Clients" data-zh="100+ 全球客户">100+ Global Clients</span>
         <span class="dot-sep"></span>
-        <span data-en="25 Global Advisors" data-zh="25 位全球顾问">25 Global Advisors</span>
+        <span data-en="23 Global Advisors" data-zh="23 位全球顾问">23 Global Advisors</span>
         <span class="dot-sep"></span>
         <span data-en="5 Continents" data-zh="覆盖五大洲">5 Continents</span>
       </div>
@@ -96,7 +96,7 @@
 
     <div class="hero-visual">
       <div class="hero-stat-float hsf-1">
-        <div class="n">25</div>
+        <div class="n">23</div>
         <div class="l" data-en="Global Advisors" data-zh="全球顾问">Global Advisors</div>
       </div>
       <div class="hero-stat-float hsf-2 hsf-clients" tabindex="0">
@@ -459,7 +459,7 @@
   <div class="wrap">
     <div class="section-head centered reveal">
       <span class="eyebrow centered" data-en="Global Advisory Board" data-zh="全球顾问委员会">Global Advisory Board</span>
-      <h2 class="section-title" data-en="25 Global Leaders Across 5 Continents" data-zh="25 位全球领袖，覆盖五大洲">25 Global Leaders Across 5 Continents</h2>
+      <h2 class="section-title" data-en="23 Global Leaders Across 5 Continents" data-zh="23 位全球领袖，覆盖五大洲">23 Global Leaders Across 5 Continents</h2>
       <p class="section-sub" data-en="A network combining global vision with deep local insight." data-zh="兼具全球视野与本土洞察的专家网络。">A network combining global vision with deep local insight.</p>
     </div>
     <div class="adv-marquee" id="advMarquee">
@@ -503,7 +503,7 @@
             <h4 data-en="Global vision + local insight: a network of experts" data-zh="全球视野 + 本土洞察的专家网络">Global vision + local insight: a network of experts</h4>
             <span class="acc-plus"></span>
           </button>
-          <div class="acc-body"><div class="acc-body-inner" data-en="Our 25-member advisory board spans five continents, pairing global perspective with on-the-ground local knowledge." data-zh="25 位顾问委员覆盖五大洲，将全球视角与本地洞察相结合。">Our 25-member advisory board spans five continents, pairing global perspective with on-the-ground local knowledge.</div></div>
+          <div class="acc-body"><div class="acc-body-inner" data-en="Our 23-member advisory board spans five continents, pairing global perspective with on-the-ground local knowledge." data-zh="23 位顾问委员覆盖五大洲，将全球视角与本地洞察相结合。">Our 23-member advisory board spans five continents, pairing global perspective with on-the-ground local knowledge.</div></div>
         </div>
         <div class="acc-item" data-acc>
           <button class="acc-head">
@@ -540,7 +540,7 @@
       <h2 class="section-title" data-en="A Network That Scales With You" data-zh="与您同行的全球网络">A Network That Scales With You</h2>
     </div>
     <div class="nums-grid">
-      <div class="num-cell reveal"><div class="num-big" data-count="25">25</div><div class="num-label" data-en="Global Advisors" data-zh="全球顾问">Global Advisors</div></div>
+      <div class="num-cell reveal"><div class="num-big" data-count="23">23</div><div class="num-label" data-en="Global Advisors" data-zh="全球顾问">Global Advisors</div></div>
       <div class="num-cell reveal d1"><div class="num-big" data-count="5">5</div><div class="num-label" data-en="Continents" data-zh="覆盖大洲">Continents</div></div>
       <div class="num-cell reveal d2"><div class="num-big" data-count="10">10</div><div class="num-label" data-en="UNGC Principles" data-zh="UNGC 原则">UNGC Principles</div></div>
       <div class="num-cell reveal d3"><div class="num-big">3C</div><div class="num-label" data-en="Integrated Framework" data-zh="一体化框架">Integrated Framework</div></div>
@@ -616,25 +616,29 @@
 /* ---- Advisory board data + render ---- */
 (function () {
   var advisors = [
-    ["Linda Painan","许菱娜","Founder & Chairperson","Global Economic Network","SG · CN · SEA","新加坡·中国·东南亚"],
-    ["Pierre Cohade","柯华德","Director","Johnson Controls / CEAT","CN · EU · IN · ZA","中国·欧洲·印度·南非"],
-    ["Frances Chang","章嘉玉","Board Member","Noah Holdings","SG · CN","新加坡·中国"],
-    ["Vivien Chang","蒋颖","Chairman","Deloitte China","CN","中国"],
-    ["Himanshu Chaturvedi","贺满袖","Regional Head","Olam Agri","SG · CN","新加坡·中国"],
-    ["Carlo D'Andrea","代开乐","Founder","D'Andrea & Partners","CN · IT · EU","中国·意大利·欧洲"],
-    ["Curt Ferguson","冯广晟","Managing Partner","Ventech China","US · MN","美国·蒙古"],
-    ["Peter Foo","符懋赞","President & CEO","UOB China","SG · CN","新加坡·中国"],
-    ["Julian Kwek","郭俊耀","Director","Drew & Napier","ID · SG","印尼·新加坡"],
-    ["Bruno Lannes","布鲁诺·兰纳","Senior Partner","Bain & Company","UK · FR · CN","英·法·中"],
-    ["Qiang Li","李强","Corporate Lawyer","DLA Piper","US · CN","美国·中国"],
-    ["Manoj Mehta","马偌杰","CEO","Naked Group","ZA · IN · US","南非·印度·美国"],
-    ["Ng Yiping","黄榆镔","Co-founder & MP","Yunqi Capital","SG · CN","新加坡·中国"],
-    ["Marco Olszewsky","马世吉","President & CEO","RHI Magnesita","CN · EU · APAC","中国·欧盟·亚太"],
-    ["Ong Tze Guan","王子元","CEO","Glowtec & H2MO","SG · SEA","新加坡·东南亚"],
-    ["Rajnish Puri","普瑞","Founder & Chairman","RP Group","CN · IN · AE","中国·印度·迪拜"],
-    ["Raymond Ro","户镇铉","Associate Dean","NYU Shanghai","KR · US","韩国·美国"],
-    ["Dr Teh Kok Peng","郑国枰","Chair, EAI","NUS","SG · SEA","新加坡·东南亚"],
-    ["Dr Lola Woetzel","","Managing Partner","Global6","ME · US","中东·美国"]
+    ["Linda Painan","许菱娜","Founder & CEO","Global Economic Network","SG · CN · SEA","新加坡·中国·东南亚"],
+    ["Siddharth Chatterjee","常启德","CEO","Global Neighbours","IN · CN","印度·中国"],
+    ["Vivian Jiang","蒋颖","Chairman","Deloitte China","CN","中国"],
+    ["Himanshu Chaturvedi","贺满袖","Regional Head, China & ASEAN","Olam Agri","SG · CN","新加坡·中国"],
+    ["Pierre E. Cohade","柯华德","Chairman","IMA CEO Forum China","CN · EU · IN · ZA","中国·欧洲·印度·南非"],
+    ["Carlo D'Andrea","代开乐","Founder & Managing Partner","D'Andrea & Partners","CN · IT · EU","中国·意大利·欧洲"],
+    ["Curt Ferguson","冯光晟","Managing Director","Ventech China","US · CN · MN","美国·中国·蒙古"],
+    ["Peter Foo","符懋赞","President & CEO","UOB (China)","CN · SG","中国·新加坡"],
+    ["Julian Kwek","郭俊耀","Director & Co-Head","Drew & Napier","ID · SG","印尼·新加坡"],
+    ["Bruno Lannes","布鲁诺·兰纳","Senior Partner","Bain & Company China","UK · FR · CN","英国·法国·中国"],
+    ["Qiang Li","李强","Partner, China Desk","DLA Piper","US · CN","美国·中国"],
+    ["Manoj Mehta","马偌杰","CEO","Naked Group","ZA · IN · US · CN","南非·印度·美国·中国"],
+    ["Ng Yiping","黄榆镔","Co-Founder & Managing Partner","Yunqi Partners","SG · CN","新加坡·中国"],
+    ["Ong Tze Guan","王子元","CEO; Chairman of SCCI China","Glowtec & H2MO","SG · SEA · CN","新加坡·东南亚·中国"],
+    ["Rajnish Puri","拉吉尼什·普里","Founder & CEO","RP Group","CN · IN · Dubai","中国·印度·迪拜"],
+    ["Marco Olszewsky","马世吉","President & CEO, China & East Asia","RHI Magnesita","CN · EU · APAC · AT","中国·欧盟·亚太·奥地利"],
+    ["Dr Raymond Ro","户镇铉","Associate Dean of Business","NYU Shanghai","KR · US","韩国·美国"],
+    ["Dr Teh Kok Peng","郑国枰","Chairman, East Asian Institute","NUS","SG · CN · SEA","新加坡·中国·东南亚"],
+    ["Dr Lola Woetzel","罗拉·沃策尔","Managing Partner","Global6 / McKinsey","ME · US · CN","中东·美国·中国"],
+    ["Pablo Machado","","Global EVP, Strategy & Asia","Suzano","LATAM · BR · US","拉美·巴西·美国"],
+    ["Dr Yolinda Chan","陈玉茹","Consul General, Shanghai","Republic of Fiji","FJ · CN · OC","斐济·中国·大洋洲"],
+    ["Frances Chang","章嘉玉","Chairwoman, Sustainability & Compliance","Noah Holdings","SG · CN","新加坡·中国"],
+    ["Li Zhong","李忠","President, Asia Pacific","Walgreens Boots Alliance","US · CN","美国·中国"]
   ];
   var palettes = [
     "linear-gradient(135deg,#0E7A52,#2BD49B)","linear-gradient(135deg,#0EA5A4,#16A34A)",
