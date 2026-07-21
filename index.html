@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=12">
+<link rel="stylesheet" href="styles.css?v=13">
 </head>
 <body>
 
@@ -95,7 +95,7 @@
     </div>
 
     <div class="hero-visual">
-      <div class="hero-stat-float hsf-1">
+      <div class="hero-stat-float hsf-1 hsf-advisors" tabindex="0">
         <div class="n">23</div>
         <div class="l" data-en="Global Advisors" data-zh="全球顾问">Global Advisors</div>
       </div>
@@ -103,7 +103,7 @@
         <div class="n">100+</div>
         <div class="l" data-en="Global Clients" data-zh="全球客户">Global Clients</div>
       </div>
-      <div class="hero-stat-float hsf-3">
+      <div class="hero-stat-float hsf-3 hsf-continents" tabindex="0">
         <div class="n">5</div>
         <div class="l" data-en="Continents" data-zh="覆盖大洲">Continents</div>
       </div>
@@ -115,6 +115,42 @@
         </div>
         <svg class="hsf-edges" id="cliEdges" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
         <span class="hsf-hub"><b>100+</b><small data-en="Clients" data-zh="客户">Clients</small></span>
+      </div>
+
+      <!-- advisors reveal — avatar mosaic -->
+      <div class="hsf-panel hsf-adv-panel" aria-hidden="true">
+        <div class="hsf-cap hsf-cap-flow">
+          <span class="hsf-cap-eye" data-en="Global Advisory Board" data-zh="全球顾问委员会">Global Advisory Board</span>
+          <b data-en="23 leaders across 5 continents" data-zh="23 位全球领袖，覆盖五大洲">23 leaders across 5 continents</b>
+          <span class="hsf-cap-sub" data-en="Hover an avatar for the advisor's role" data-zh="悬停头像查看顾问履历">Hover an avatar for the advisor's role</span>
+        </div>
+        <div class="hsf-mosaic" id="advMosaic"></div>
+        <div class="hsf-strip" id="advDetail"></div>
+      </div>
+
+      <!-- continents reveal — wireframe globe -->
+      <div class="hsf-panel hsf-geo-panel" aria-hidden="true">
+        <div class="hsf-cap hsf-cap-flow">
+          <span class="hsf-cap-eye" data-en="Global Footprint" data-zh="全球布局">Global Footprint</span>
+          <b data-en="5 continents, 20+ markets" data-zh="覆盖五大洲，20+ 市场">5 continents, 20+ markets</b>
+          <span class="hsf-cap-sub" data-en="Hover a node to see the markets covered" data-zh="悬停光点查看该洲覆盖市场">Hover a node to see the markets covered</span>
+        </div>
+        <div class="hsf-globe">
+          <div class="hsf-globe-stage" id="geoGlobe">
+            <svg class="hsf-globe-wire" viewBox="0 0 200 200" aria-hidden="true">
+              <ellipse class="gw-par" cx="100" cy="50" rx="59.9" ry="7"/>
+              <ellipse class="gw-par" cx="100" cy="74" rx="73.5" ry="9"/>
+              <ellipse class="gw-par" cx="100" cy="100" rx="78" ry="11"/>
+              <ellipse class="gw-par" cx="100" cy="126" rx="73.5" ry="9"/>
+              <ellipse class="gw-par" cx="100" cy="150" rx="59.9" ry="7"/>
+              <ellipse class="gw-mer" cx="100" cy="100" rx="26" ry="78"/>
+              <ellipse class="gw-mer" cx="100" cy="100" rx="52" ry="78"/>
+              <line class="gw-mer" x1="100" y1="22" x2="100" y2="178"/>
+              <circle class="gw-rim" cx="100" cy="100" r="78"/>
+            </svg>
+          </div>
+        </div>
+        <div class="hsf-strip" id="geoDetail"></div>
       </div>
     </div>
   </div>
@@ -671,6 +707,94 @@
   for (var pass=0; pass<2; pass++){
     advisors.forEach(function(a, i){ track.appendChild(makeCard(a, i)); });
   }
+
+  /* ---- Hero reveals driven by the same roster ---- */
+  function currentLang(){
+    return document.documentElement.getAttribute('data-lang-active') === 'zh' ? 'zh' : 'en';
+  }
+  // returns a setter that keeps a strip bilingual so applyLang() can re-render it
+  function bindStrip(el){
+    return function(en, zh){
+      if (!el) return;
+      el.setAttribute('data-en', en);
+      el.setAttribute('data-zh', zh);
+      el.textContent = currentLang() === 'zh' ? zh : en;
+    };
+  }
+
+  /* "23 Global Advisors" — avatar mosaic */
+  var mosaic = document.getElementById('advMosaic');
+  var setAdv = bindStrip(document.getElementById('advDetail'));
+  var ADV_EN = 'Deloitte · Bain · McKinsey · UOB · DLA Piper · NUS · NYU Shanghai';
+  var ADV_ZH = '德勤 · 贝恩 · 麦肯锡 · 大华银行 · 欧华 · 新加坡国立大学 · 上海纽约大学';
+  if (mosaic) {
+    advisors.forEach(function(a, i){
+      var av = document.createElement('span');
+      av.className = 'hsf-av';
+      av.style.background = palettes[i % palettes.length];
+      av.style.transitionDelay = (0.06 + i * 0.022).toFixed(3) + 's';
+      av.textContent = initials(a[0]);
+      var en = a[0] + ' · ' + a[2] + ', ' + a[3];
+      var zh = (a[1] || a[0]) + ' · ' + a[2] + '，' + a[3];
+      av.addEventListener('mouseenter', function(){ setAdv(en, zh); });
+      av.addEventListener('mouseleave', function(){ setAdv(ADV_EN, ADV_ZH); });
+      mosaic.appendChild(av);
+    });
+    setAdv(ADV_EN, ADV_ZH);
+  }
+
+  /* "5 Continents" — wireframe globe with pulsing nodes */
+  var globe = document.getElementById('geoGlobe');
+  var setGeo = bindStrip(document.getElementById('geoDetail'));
+  var GEO_EN = 'Asia · Europe · Americas · Africa · Oceania';
+  var GEO_ZH = '亚洲 · 欧洲 · 美洲 · 非洲 · 大洋洲';
+  if (globe) {
+    var CODE2C = {
+      CN:'as', SG:'as', IN:'as', ID:'as', KR:'as', MN:'as', SEA:'as', APAC:'as', ME:'as', Dubai:'as',
+      EU:'eu', IT:'eu', UK:'eu', FR:'eu', AT:'eu',
+      US:'am', BR:'am', LATAM:'am',
+      ZA:'af',
+      FJ:'oc', OC:'oc'
+    };
+    var CONTINENTS = [
+      { k:'eu', en:'Europe',   zh:'欧洲',   x:54, y:29   },
+      { k:'as', en:'Asia',     zh:'亚洲',   x:70, y:41   },
+      { k:'am', en:'Americas', zh:'美洲',   x:26, y:47.5 },
+      { k:'af', en:'Africa',   zh:'非洲',   x:50, y:59   },
+      { k:'oc', en:'Oceania',  zh:'大洋洲', x:76, y:70   }
+    ];
+    // derive markets + advisor presence from the roster, so both stay in sync
+    var mkts = {}, seats = {};
+    CONTINENTS.forEach(function(c){ mkts[c.k] = []; seats[c.k] = 0; });
+    advisors.forEach(function(a){
+      var hit = {};
+      a[4].split('·').forEach(function(raw){
+        var code = raw.trim(), k = CODE2C[code];
+        if (!k) return;
+        if (mkts[k].indexOf(code) === -1) mkts[k].push(code);
+        if (!hit[k]) { hit[k] = 1; seats[k]++; }
+      });
+    });
+    CONTINENTS.forEach(function(c, i){
+      var codes = mkts[c.k];
+      var list = codes.slice(0, 6).join(' ') + (codes.length > 6 ? ' +' + (codes.length - 6) : '');
+      var n = seats[c.k];
+      // advisors span several regions, so these counts overlap — say "active" not a bare total
+      var en = c.en + ' · ' + n + (n === 1 ? ' advisor' : ' advisors') + ' active · ' + list;
+      var zh = c.zh + ' · ' + n + ' 位顾问在此布局 · ' + list;
+      var dot = document.createElement('span');
+      dot.className = 'hsf-geo';
+      dot.style.setProperty('--x', c.x + '%');
+      dot.style.setProperty('--y', c.y + '%');
+      dot.style.setProperty('--d', (i * 0.42).toFixed(2) + 's');
+      dot.style.transitionDelay = (0.12 + i * 0.09).toFixed(2) + 's';
+      dot.innerHTML = '<span class="hsf-geo-lab" data-en="' + c.en + '" data-zh="' + c.zh + '">' + c.en + '</span>';
+      dot.addEventListener('mouseenter', function(){ setGeo(en, zh); });
+      dot.addEventListener('mouseleave', function(){ setGeo(GEO_EN, GEO_ZH); });
+      globe.appendChild(dot);
+    });
+    setGeo(GEO_EN, GEO_ZH);
+  }
 })();
 </script>
 <script>
@@ -785,6 +909,6 @@
   ring(CLIENTS.slice(6, 14), 38, 0.18);
 })();
 </script>
-<script src="app.js?v=12"></script>
+<script src="app.js?v=13"></script>
 </body>
 </html>
