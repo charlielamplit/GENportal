@@ -228,10 +228,18 @@ h1, h2, h3, h4 {
 .nav-inner { display: flex; align-items: center; gap: 22px; }
 
 .brand { display: flex; align-items: center; gap: 11px; color: #fff; }
+/* official lockup (mark + Global Economic Network + 全球经济发展联盟).
+   Held at 42px tall so the nav bar height is unchanged; 1.699:1 => 71px wide. */
 .brand-mark {
-  width: 42px; height: 42px;
-  background: url("assets/gen-logo.webp?v=2") center / contain no-repeat;
+  width: 71px; height: 42px;
+  background: url("assets/gen-logo-full.webp?v=1") left center / contain no-repeat;
   flex: none;
+}
+/* wordmark now lives inside the logo image — keep the text for screen readers & SEO */
+.brand-text {
+  position: absolute; width: 1px; height: 1px;
+  overflow: hidden; white-space: nowrap;
+  clip: rect(0 0 0 0); clip-path: inset(50%);
 }
 .brand-text { line-height: 1.1; }
 .brand-text b { font-family: var(--font-display); font-weight: 800; font-size: 18px; letter-spacing: -.02em; display: block; }
@@ -526,28 +534,29 @@ h1, h2, h3, h4 {
   font-weight: 500; color: var(--c-text-muted);
 }
 
-/* avatar mosaic */
-.hsf-mosaic {
+/* institution wall — the advisors' organisations carry the credibility */
+.hsf-orgwall {
   flex: 1; min-height: 0; margin-top: 16px;
-  display: grid; grid-template-columns: repeat(6, 1fr);
-  gap: 9px; align-content: center;
+  display: flex; flex-wrap: wrap;
+  align-content: center; justify-content: center;
+  gap: 9px; overflow: hidden;
 }
-.hsf-av {
-  aspect-ratio: 1; border-radius: 999px;
-  display: grid; place-items: center;
-  font-family: var(--font-num); font-weight: 700;
-  font-size: clamp(10px, 1.05vw, 14px);
-  color: #fff; line-height: 1;
-  box-shadow: 0 4px 12px rgba(0,0,0,.14);
-  opacity: 0; transform: scale(.3) translateY(8px);
-  transition: opacity .3s ease, transform .45s cubic-bezier(.34,1.56,.64,1);
+.hsf-org {
+  padding: 9px 14px;
+  border: 1px solid var(--c-border);
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--c-primary) 5%, transparent);
+  font-size: 12.5px; font-weight: 600; line-height: 1.25;
+  color: var(--c-text); white-space: nowrap;
+  opacity: 0; transform: translateY(7px) scale(.94);
+  transition: opacity .3s ease, transform .4s cubic-bezier(.34,1.56,.64,1),
+              background-color .2s ease, border-color .2s ease, color .2s ease;
 }
-.hsf-advisors:hover ~ .hsf-adv-panel .hsf-av,
-.hsf-advisors:focus-within ~ .hsf-adv-panel .hsf-av,
-.hsf-adv-panel:hover .hsf-av { opacity: 1; transform: none; }
-.hsf-adv-panel .hsf-av:hover {
-  transform: scale(1.14);
-  box-shadow: 0 8px 20px rgba(0,0,0,.24);
+.hsf-advisors:hover ~ .hsf-adv-panel .hsf-org,
+.hsf-advisors:focus-within ~ .hsf-adv-panel .hsf-org,
+.hsf-adv-panel:hover .hsf-org { opacity: 1; transform: none; }
+.hsf-adv-panel .hsf-org:hover {
+  background: var(--grad-hero); border-color: transparent; color: #fff;
   transition-delay: 0s;
 }
 
