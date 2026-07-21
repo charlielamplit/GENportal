@@ -181,8 +181,17 @@
         return c ? c.getBoundingClientRect().width + 16 : 316;
       }
       function norm(){ while (x <= -half) x += half; while (x > 0) x -= half; }
+      // hold at the start until the row is actually on screen, so the first card
+      // (Linda Painan, who founded GEN) is what you see on arrival — and so we
+      // aren't animating off-screen
+      var inView = true;
+      if (window.IntersectionObserver) {
+        inView = false;
+        new IntersectionObserver(function (es) { inView = es[0].isIntersecting; },
+                                 { threshold: 0.15 }).observe(marquee);
+      }
       function frame(){
-        if (!paused) { x -= speed; norm(); track.style.transform = 'translateX(' + x + 'px)'; }
+        if (!paused && inView) { x -= speed; norm(); track.style.transform = 'translateX(' + x + 'px)'; }
         requestAnimationFrame(frame);
       }
       // recompute half after fonts/layout settle
