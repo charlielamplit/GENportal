@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=14">
+<link rel="stylesheet" href="styles.css?v=15">
 </head>
 <body>
 
@@ -685,13 +685,22 @@
     if(parts.length===1) return parts[0].slice(0,2).toUpperCase();
     return (parts[0][0]+parts[parts.length-1][0]).toUpperCase();
   }
+  // photo filenames are derived from the name with the same rule used to export
+  // them, so there is no second list to keep in sync
+  function photo(name){
+    return 'assets/advisors/' + name.replace(/^Dr\s+/,'').toLowerCase()
+      .replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'') + '.webp';
+  }
   var track = document.getElementById('advTrack');
   function makeCard(a, i){
     var card = document.createElement('div');
     card.className = 'adv-card';
     card.innerHTML =
       '<div class="adv-top">'+
-        '<div class="avatar" style="background:'+palettes[i%palettes.length]+'">'+initials(a[0])+'</div>'+
+        '<div class="avatar" style="background:'+palettes[i%palettes.length]+'">'+initials(a[0])+
+          '<img src="'+photo(a[0])+'" alt="'+a[0]+'" loading="lazy" decoding="async" '+
+          'onerror="this.remove()">'+   // no photo yet -> the initials underneath show through
+        '</div>'+
         '<div>'+
           '<div class="adv-name-en">'+a[0]+'</div>'+
           (a[1]? '<div class="adv-name-zh">'+a[1]+'</div>':'')+
@@ -907,6 +916,6 @@
   ring(CLIENTS.slice(6, 14), 38, 0.18);
 })();
 </script>
-<script src="app.js?v=14"></script>
+<script src="app.js?v=15"></script>
 </body>
 </html>
