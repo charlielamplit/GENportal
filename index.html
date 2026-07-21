@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=17">
+<link rel="stylesheet" href="styles.css?v=19">
 </head>
 <body>
 
@@ -167,6 +167,7 @@
         <div class="hsf-cap hsf-cap-flow">
           <span class="hsf-cap-eye" data-en="Family Office Advisory" data-zh="全球家办新动能委员会">Family Office Advisory</span>
           <b data-en="A cross-border nexus for family offices" data-zh="家族办公室的跨国协作枢纽">A cross-border nexus for family offices</b>
+          <span class="hsf-cap-sub" data-en="Connecting leading family offices and enterprise groups through industry research, resource integration and cross-border synergy." data-zh="连接全球顶尖家族办公室与大型企业集团，通过产业深研、资源互通与跨界融合，赋能传统产业跨越地缘边界。">Connecting leading family offices and enterprise groups through industry research, resource integration and cross-border synergy.</span>
         </div>
         <div class="hsf-goals">
           <div class="hsf-goal">
@@ -191,7 +192,29 @@
             </div>
           </div>
         </div>
-        <div class="hsf-strip" data-en="Advisors · Marcus Zheng, Golden Vision Capital · Ted Qian, CP Group · Sarah Yeow, OAKSFO" data-zh="委员会顾问 · 郑竹凯（金景资本合伙人）· 钱君（正大集团董事长办公室）· 姚于萍（OAKSFO 首席财务官兼首席运营官）">Advisors · Marcus Zheng, Golden Vision Capital · Ted Qian, CP Group · Sarah Yeow, OAKSFO</div>
+        <div class="hsf-people">
+          <div class="hsf-person">
+            <img src="assets/famoffice/marcus-zheng.webp" alt="Marcus Zheng" loading="lazy" decoding="async">
+            <div>
+              <b>Marcus Zheng<small data-en="" data-zh="郑竹凯"></small></b>
+              <span data-en="Partner, Golden Vision Capital" data-zh="金景资本合伙人">Partner, Golden Vision Capital</span>
+            </div>
+          </div>
+          <div class="hsf-person">
+            <img src="assets/famoffice/ted-qian.webp" alt="Ted Qian" loading="lazy" decoding="async">
+            <div>
+              <b>Ted Qian<small data-en="" data-zh="钱君"></small></b>
+              <span data-en="Chairman Office, CP Group" data-zh="正大集团董事长办公室">Chairman Office, CP Group</span>
+            </div>
+          </div>
+          <div class="hsf-person">
+            <img src="assets/famoffice/sarah-yeow.webp" alt="Sarah Yeow" loading="lazy" decoding="async">
+            <div>
+              <b>Sarah Yeow<small data-en="" data-zh="姚于萍"></small></b>
+              <span data-en="CFO / COO, OAKSFO" data-zh="OAKSFO 首席财务官兼首席运营官">CFO / COO, OAKSFO</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- her circle reveal -->
@@ -200,7 +223,7 @@
           <span class="hsf-cap-eye" data-en="Her Circle" data-zh="Her Circle 女性领袖网络">Her Circle</span>
           <b data-en="16 women leaders, founded by GEN in 2025" data-zh="16 位女性领袖，GEN 于 2025 年发起">16 women leaders, founded by GEN in 2025</b>
         </div>
-        <div class="hsf-orgwall" id="herWall"></div>
+        <div class="hsf-faces" id="herWall"></div>
         <div class="hsf-strip" id="herDetail"></div>
       </div>
     </div>
@@ -881,17 +904,24 @@
   var HER_ZH = '悬停任一姓名，查看其职务与机构';
   if (herWall) {
     herCircle.forEach(function(h, i){
-      var chip = document.createElement('span');
-      chip.className = 'hsf-org';
-      chip.textContent = h[0];
-      chip.style.transitionDelay = (0.05 + i * 0.022).toFixed(3) + 's';
+      var cell = document.createElement('span');
+      cell.className = 'hsf-face';
+      cell.style.transitionDelay = (0.05 + i * 0.02).toFixed(3) + 's';
+      cell.innerHTML =
+        '<img src="assets/hercircle/' + photoName(h[0]) + '.webp" alt="' + h[0] +
+        '" loading="lazy" decoding="async" onerror="this.remove()">' +
+        '<em>' + h[0] + '</em>';
       var en = h[0] + ' · ' + h[1] + ', ' + h[2];
       var zh = h[0] + ' · ' + h[3];
-      chip.addEventListener('mouseenter', function(){ setHer(en, zh); });
-      chip.addEventListener('mouseleave', function(){ setHer(HER_EN, HER_ZH); });
-      herWall.appendChild(chip);
+      cell.addEventListener('mouseenter', function(){ setHer(en, zh); });
+      cell.addEventListener('mouseleave', function(){ setHer(HER_EN, HER_ZH); });
+      herWall.appendChild(cell);
     });
     setHer(HER_EN, HER_ZH);
+  }
+  // same slug rule the export used, so there is no second filename list
+  function photoName(n){
+    return n.replace(/^Dr\s+/,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
   }
 })();
 </script>
@@ -1007,6 +1037,6 @@
   ring(CLIENTS.slice(6, 14), 38, 0.18);
 })();
 </script>
-<script src="app.js?v=17"></script>
+<script src="app.js?v=19"></script>
 </body>
 </html>
