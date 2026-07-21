@@ -445,6 +445,18 @@ h1, h2, h3, h4 {
 .hsf-1 { top: 11%; right: 5%; animation-delay: 0s; }
 .hsf-2 { top: 43%; left: 9%; animation-delay: -2s; }
 .hsf-3 { bottom: 12%; right: 13%; animation-delay: -4s; }
+.hsf-4 { top: 6%; left: 1%; animation-delay: -1s; }
+.hsf-5 { bottom: 13%; left: 2%; animation-delay: -3s; }
+/* second tier — GEN's platforms. Smaller, icon-led and gold so the three
+   headline figures above keep their weight. */
+.hsf-alt { padding: 7px 16px 7px 7px; }
+.hsf-alt .n {
+  width: 38px; height: 38px;
+  background: linear-gradient(135deg, var(--c-accent), color-mix(in oklab, var(--c-accent) 62%, #fff));
+  color: #fff;
+}
+.hsf-alt .n .ico { stroke: currentColor; fill: none; stroke-width: 1.9; }
+.hsf-alt .l { font-size: 12px; }
 @keyframes floaty { 0%,100%{ transform: translateY(0); } 50%{ transform: translateY(-12px); } }
 
 /* clients float — large relationship-graph reveal (fills hero visual) */
@@ -521,7 +533,47 @@ h1, h2, h3, h4 {
 .hsf-adv-panel:hover,
 .hsf-continents:hover ~ .hsf-geo-panel,
 .hsf-continents:focus-within ~ .hsf-geo-panel,
-.hsf-geo-panel:hover { opacity: 1; transform: none; pointer-events: auto; }
+.hsf-geo-panel:hover,
+.hsf-family:hover ~ .hsf-fam-panel,
+.hsf-family:focus-within ~ .hsf-fam-panel,
+.hsf-fam-panel:hover,
+.hsf-hercircle:hover ~ .hsf-her-panel,
+.hsf-hercircle:focus-within ~ .hsf-her-panel,
+.hsf-her-panel:hover { opacity: 1; transform: none; pointer-events: auto; }
+
+/* family-office objectives */
+.hsf-goals {
+  flex: 1; min-height: 0; margin-top: 18px;
+  display: flex; flex-direction: column; justify-content: center; gap: 16px;
+}
+.hsf-goal {
+  display: flex; gap: 13px; align-items: flex-start;
+  opacity: 0; transform: translateY(9px);
+  transition: opacity .3s ease, transform .4s cubic-bezier(.34,1.56,.64,1);
+}
+.hsf-goal:nth-child(2) { transition-delay: .08s; }
+.hsf-goal:nth-child(3) { transition-delay: .16s; }
+.hsf-family:hover ~ .hsf-fam-panel .hsf-goal,
+.hsf-family:focus-within ~ .hsf-fam-panel .hsf-goal,
+.hsf-fam-panel:hover .hsf-goal { opacity: 1; transform: none; }
+.hsf-goal-n {
+  flex: none; width: 30px; height: 30px; border-radius: 9px;
+  display: grid; place-items: center;
+  background: color-mix(in oklab, var(--c-accent) 16%, transparent);
+  color: var(--accent-on-light);
+  font-family: var(--font-num); font-weight: 700; font-size: 11.5px;
+}
+.hsf-goal b { display: block; font-size: 13.5px; font-weight: 700; color: var(--c-text); line-height: 1.3; }
+.hsf-goal span { display: block; font-size: 11.5px; color: var(--c-text-muted); line-height: 1.45; margin-top: 3px; }
+
+/* her-circle chips reuse the institution-wall look */
+.hsf-hercircle:hover ~ .hsf-her-panel .hsf-org,
+.hsf-hercircle:focus-within ~ .hsf-her-panel .hsf-org,
+.hsf-her-panel:hover .hsf-org { opacity: 1; transform: none; }
+.hsf-her-panel .hsf-org:hover {
+  background: var(--grad-hero); border-color: transparent; color: #fff;
+  transition-delay: 0s;
+}
 /* caption flows in-panel here instead of the graph's absolute placement */
 .hsf-cap-flow { position: static; max-width: none; flex: none; }
 

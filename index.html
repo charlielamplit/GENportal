@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=16">
+<link rel="stylesheet" href="styles.css?v=17">
 </head>
 <body>
 
@@ -107,6 +107,16 @@
         <div class="n">5</div>
         <div class="l" data-en="Continents" data-zh="覆盖大洲">Continents</div>
       </div>
+      <!-- second tier: GEN's platforms, marked with an icon rather than a figure
+           so they don't read as another headline metric -->
+      <div class="hero-stat-float hsf-4 hsf-alt hsf-family" tabindex="0">
+        <div class="n"><svg class="ico" viewBox="0 0 24 24" style="width:19px;height:19px"><path d="M3 21V9l6-4 6 4v12"/><path d="M15 21V11l6 4v6"/><path d="M3 21h18M9 13h1M9 17h1"/></svg></div>
+        <div class="l" data-en="Family Office" data-zh="家办委员会">Family Office</div>
+      </div>
+      <div class="hero-stat-float hsf-5 hsf-alt hsf-hercircle" tabindex="0">
+        <div class="n"><svg class="ico" viewBox="0 0 24 24" style="width:19px;height:19px"><circle cx="12" cy="8" r="4"/><path d="M6 21a6 6 0 0 1 12 0"/></svg></div>
+        <div class="l" data-en="Her Circle" data-zh="Her Circle">Her Circle</div>
+      </div>
       <div class="hsf-graph" id="cliGraph" aria-hidden="true">
         <div class="hsf-cap">
           <span class="hsf-cap-eye" data-en="Global Clients" data-zh="全球客户">Global Clients</span>
@@ -150,6 +160,48 @@
           </div>
         </div>
         <div class="hsf-strip" id="geoDetail"></div>
+      </div>
+
+      <!-- family office committee reveal -->
+      <div class="hsf-panel hsf-fam-panel" aria-hidden="true">
+        <div class="hsf-cap hsf-cap-flow">
+          <span class="hsf-cap-eye" data-en="Family Office Advisory" data-zh="全球家办新动能委员会">Family Office Advisory</span>
+          <b data-en="A cross-border nexus for family offices" data-zh="家族办公室的跨国协作枢纽">A cross-border nexus for family offices</b>
+        </div>
+        <div class="hsf-goals">
+          <div class="hsf-goal">
+            <span class="hsf-goal-n">01</span>
+            <div>
+              <b data-en="Global market access" data-zh="全球新市场拓局">Global market access</b>
+              <span data-en="Bridging family capital into new overseas markets." data-zh="跨越地域限制，搭建海外新市场准入的战略桥梁。">Bridging family capital into new overseas markets.</span>
+            </div>
+          </div>
+          <div class="hsf-goal">
+            <span class="hsf-goal-n">02</span>
+            <div>
+              <b data-en="Tech empowerment" data-zh="传统事业科技赋能">Tech empowerment</b>
+              <span data-en="Expert-led transformation, opening a second growth curve." data-zh="顶尖专家定制化转型方案，开辟第二增长曲线。">Expert-led transformation, opening a second growth curve.</span>
+            </div>
+          </div>
+          <div class="hsf-goal">
+            <span class="hsf-goal-n">03</span>
+            <div>
+              <b data-en="Life sciences &amp; succession" data-zh="生命科学与家族传承">Life sciences &amp; succession</b>
+              <span data-en="Longevity and biotech as an asset for the next generation." data-zh="前沿生物科技与长寿医学，赋能下一代接班。">Longevity and biotech as an asset for the next generation.</span>
+            </div>
+          </div>
+        </div>
+        <div class="hsf-strip" data-en="Advisors · Marcus Zheng, Golden Vision Capital · Ted Qian, CP Group · Sarah Yeow, OAKSFO" data-zh="委员会顾问 · 郑竹凯（金景资本合伙人）· 钱君（正大集团董事长办公室）· 姚于萍（OAKSFO 首席财务官兼首席运营官）">Advisors · Marcus Zheng, Golden Vision Capital · Ted Qian, CP Group · Sarah Yeow, OAKSFO</div>
+      </div>
+
+      <!-- her circle reveal -->
+      <div class="hsf-panel hsf-her-panel" aria-hidden="true">
+        <div class="hsf-cap hsf-cap-flow">
+          <span class="hsf-cap-eye" data-en="Her Circle" data-zh="Her Circle 女性领袖网络">Her Circle</span>
+          <b data-en="16 women leaders, founded by GEN in 2025" data-zh="16 位女性领袖，GEN 于 2025 年发起">16 women leaders, founded by GEN in 2025</b>
+        </div>
+        <div class="hsf-orgwall" id="herWall"></div>
+        <div class="hsf-strip" id="herDetail"></div>
       </div>
     </div>
   </div>
@@ -802,6 +854,45 @@
     });
     setGeo(GEO_EN, GEO_ZH);
   }
+
+  /* "Her Circle" — the women's leadership network GEN founded in 2025.
+     [name, title EN, org, title ZH] */
+  var herCircle = [
+    ["Linda Painan","Founder & CEO","Global Economic Network","创始人兼主席"],
+    ["Isabel Mahe","CEO","Apple China","苹果中国区董事总经理"],
+    ["Phyllis Cheung","CEO","McDonald's China","麦当劳中国首席执行官"],
+    ["Ginger Cheng","CEO","DBS Bank China","星展银行（中国）首席执行官"],
+    ["Vivian Jiang","Chairman","Deloitte China","德勤中国主席"],
+    ["Mattie Bekink","Chief Representative China","Ford Foundation","福特基金会中国首席代表"],
+    ["Dr Yolinda Chan","Consul General","Republic of Fiji, Shanghai","斐济共和国驻上海总领事"],
+    ["Dr Lola Woetzel","Managing Partner","Global6 Limited","Global6 管理合伙人"],
+    ["Ke Zhao (Coco)","Managing Director","CICC","中金公司董事总经理"],
+    ["Zhong Yuan Xing Li","VP, External Affairs","Shiseido China","资生堂中国对外事务副总裁"],
+    ["Sophia Wu","CEO","iluvVivid","iluvVivid 首席执行官"],
+    ["Christina Tan","GM, Corporate Services","Luen Thai Group","联泰集团企业服务总经理"],
+    ["Donglei Zhou","Co-founder & Chairman","Julia Gabriel Education China","Julia Gabriel 中国联合创始人"],
+    ["Yan Sun","Founder & Chairwoman","Shanghai Kingbond Wine","上海金邦酒业创始人"],
+    ["Yiming Mao (Nico)","Chairperson","Shanghai Tongxinyuan Foundation","上海同心缘文化基金会理事长"],
+    ["Wen Chang","Founder","BANG Media & GOGREEN","BANG Media 合伙人"]
+  ];
+  var herWall = document.getElementById('herWall');
+  var setHer = bindStrip(document.getElementById('herDetail'));
+  var HER_EN = 'Hover a name to see her role';
+  var HER_ZH = '悬停任一姓名，查看其职务与机构';
+  if (herWall) {
+    herCircle.forEach(function(h, i){
+      var chip = document.createElement('span');
+      chip.className = 'hsf-org';
+      chip.textContent = h[0];
+      chip.style.transitionDelay = (0.05 + i * 0.022).toFixed(3) + 's';
+      var en = h[0] + ' · ' + h[1] + ', ' + h[2];
+      var zh = h[0] + ' · ' + h[3];
+      chip.addEventListener('mouseenter', function(){ setHer(en, zh); });
+      chip.addEventListener('mouseleave', function(){ setHer(HER_EN, HER_ZH); });
+      herWall.appendChild(chip);
+    });
+    setHer(HER_EN, HER_ZH);
+  }
 })();
 </script>
 <script>
@@ -916,6 +1007,6 @@
   ring(CLIENTS.slice(6, 14), 38, 0.18);
 })();
 </script>
-<script src="app.js?v=16"></script>
+<script src="app.js?v=17"></script>
 </body>
 </html>
