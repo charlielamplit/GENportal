@@ -614,12 +614,17 @@ h1, h2, h3, h4 {
 }
 .hsf-hercircle:hover ~ .hsf-her-panel .hsf-face,
 .hsf-hercircle:focus-within ~ .hsf-her-panel .hsf-face,
-.hsf-her-panel:hover .hsf-face { opacity: 1; transform: none; }
-.hsf-her-panel .hsf-face:hover img {
+.hsf-her-panel:hover .hsf-face,
+.hsf-advisors:hover ~ .hsf-adv-panel .hsf-face,
+.hsf-advisors:focus-within ~ .hsf-adv-panel .hsf-face,
+.hsf-adv-panel:hover .hsf-face { opacity: 1; transform: none; }
+.hsf-her-panel .hsf-face:hover img,
+.hsf-adv-panel .hsf-face:hover img {
   transform: scale(1.1);
   box-shadow: 0 6px 16px rgba(0,0,0,.24);
 }
-.hsf-her-panel .hsf-face:hover em { color: var(--c-text); font-weight: 600; }
+.hsf-her-panel .hsf-face:hover em,
+.hsf-adv-panel .hsf-face:hover em { color: var(--c-text); font-weight: 600; }
 /* caption flows in-panel here instead of the graph's absolute placement */
 .hsf-cap-flow { position: static; max-width: none; flex: none; }
 
@@ -630,32 +635,6 @@ h1, h2, h3, h4 {
   display: flex; align-items: center; justify-content: center;
   text-align: center; font-size: 11.5px; line-height: 1.45;
   font-weight: 500; color: var(--c-text-muted);
-}
-
-/* institution wall — the advisors' organisations carry the credibility */
-.hsf-orgwall {
-  flex: 1; min-height: 0; margin-top: 16px;
-  display: flex; flex-wrap: wrap;
-  align-content: center; justify-content: center;
-  gap: 9px; overflow: hidden;
-}
-.hsf-org {
-  padding: 9px 14px;
-  border: 1px solid var(--c-border);
-  border-radius: 999px;
-  background: color-mix(in oklab, var(--c-primary) 5%, transparent);
-  font-size: 12.5px; font-weight: 600; line-height: 1.25;
-  color: var(--c-text); white-space: nowrap;
-  opacity: 0; transform: translateY(7px) scale(.94);
-  transition: opacity .3s ease, transform .4s cubic-bezier(.34,1.56,.64,1),
-              background-color .2s ease, border-color .2s ease, color .2s ease;
-}
-.hsf-advisors:hover ~ .hsf-adv-panel .hsf-org,
-.hsf-advisors:focus-within ~ .hsf-adv-panel .hsf-org,
-.hsf-adv-panel:hover .hsf-org { opacity: 1; transform: none; }
-.hsf-adv-panel .hsf-org:hover {
-  background: var(--grad-hero); border-color: transparent; color: #fff;
-  transition-delay: 0s;
 }
 
 /* wireframe globe */
