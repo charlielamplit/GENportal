@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20">
+<link rel="stylesheet" href="styles.css?v=21">
 </head>
 <body>
 
@@ -196,21 +196,21 @@
           <div class="hsf-person">
             <img src="assets/famoffice/marcus-zheng.webp" alt="Marcus Zheng" loading="lazy" decoding="async">
             <div>
-              <b>Marcus Zheng<small data-en="" data-zh="郑竹凯"></small></b>
+              <b>Marcus Zheng</b>
               <span data-en="Partner, Golden Vision Capital" data-zh="金景资本合伙人">Partner, Golden Vision Capital</span>
             </div>
           </div>
           <div class="hsf-person">
             <img src="assets/famoffice/ted-qian.webp" alt="Ted Qian" loading="lazy" decoding="async">
             <div>
-              <b>Ted Qian<small data-en="" data-zh="钱君"></small></b>
+              <b>Ted Qian</b>
               <span data-en="Chairman Office, CP Group" data-zh="正大集团董事长办公室">Chairman Office, CP Group</span>
             </div>
           </div>
           <div class="hsf-person">
             <img src="assets/famoffice/sarah-yeow.webp" alt="Sarah Yeow" loading="lazy" decoding="async">
             <div>
-              <b>Sarah Yeow<small data-en="" data-zh="姚于萍"></small></b>
+              <b>Sarah Yeow</b>
               <span data-en="CFO / COO, OAKSFO" data-zh="OAKSFO 首席财务官兼首席运营官">CFO / COO, OAKSFO</span>
             </div>
           </div>
@@ -815,11 +815,14 @@
       var cell = document.createElement('span');
       cell.className = 'hsf-face';
       cell.style.transitionDelay = (0.05 + i * 0.018).toFixed(3) + 's';
+      // names stay English in both languages: Chinese coverage is incomplete
+      // (Pablo Machado has none, and no Her Circle member does), so mixing
+      // scripts would look accidental
       cell.innerHTML =
         '<img src="' + photo(a[0]) + '" alt="' + a[0] + '" loading="lazy" decoding="async" ' +
-        'onerror="this.remove()"><em>' + (a[1] || a[0]) + '</em>';
+        'onerror="this.remove()"><em>' + a[0] + '</em>';
       var en = a[0] + ' · ' + a[2] + ', ' + a[3];
-      var zh = (a[1] || a[0]) + ' · ' + a[2] + '，' + a[3];
+      var zh = a[0] + ' · ' + a[2] + '，' + a[3];
       cell.addEventListener('mouseenter', function(){ setAdv(en, zh); });
       cell.addEventListener('mouseleave', function(){ setAdv(ADV_EN, ADV_ZH); });
       wall.appendChild(cell);
@@ -1039,6 +1042,6 @@
   ring(CLIENTS.slice(6, 14), 38, 0.18);
 })();
 </script>
-<script src="app.js?v=20"></script>
+<script src="app.js?v=21"></script>
 </body>
 </html>
